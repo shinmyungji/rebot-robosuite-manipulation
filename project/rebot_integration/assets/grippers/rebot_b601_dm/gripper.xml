@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="rebot_b601_dm_grippers">
+  <!--Adapted from Seeed B601-DM; see assets/README.md and LICENSE.-->
+  <compiler angle="radian" eulerseq="xyz" />
+  <option timestep="0.002" gravity="0 0 -9.81" iterations="100" noslip_iterations="20" />
+  <asset>
+    <mesh name="gripper_base_hardware_black_mesh" file="../../meshes/colored_gripper_base_hardware_black.stl" />
+    <mesh name="gripper_base_metal_mesh" file="../../meshes/colored_gripper_base_metal.stl" />
+    <mesh name="gripper_base_seeed_yellow_mesh" file="../../meshes/colored_gripper_base_seeed_yellow.stl" />
+    <mesh name="finger_left_body_mesh" file="../../meshes/colored_left_finger_finger_black.stl" />
+    <mesh name="finger_left_carriage_mesh" file="../../meshes/colored_left_finger_carriage_grey.stl" />
+    <mesh name="finger_left_travel_stop_mesh" file="../../meshes/colored_left_finger_travel_stop_yellow.stl" />
+    <mesh name="finger_left_crossed_rack_mesh" file="../../meshes/colored_left_finger_rack_metal.stl" />
+    <mesh name="finger_right_body_mesh" file="../../meshes/colored_right_finger_finger_black.stl" />
+    <mesh name="finger_right_carriage_mesh" file="../../meshes/colored_right_finger_carriage_grey.stl" />
+    <mesh name="finger_right_travel_stop_mesh" file="../../meshes/colored_right_finger_travel_stop_yellow.stl" />
+    <mesh name="finger_right_crossed_rack_mesh" file="../../meshes/colored_right_finger_rack_metal.stl" />
+    <mesh name="gripper_base_collision_mesh" file="../../meshes/gripper_base.stl" />
+    <mesh name="finger_left_carriage_collision_mesh" file="../../meshes/colored_left_finger_carriage_grey.stl" />
+    <mesh name="finger_left_travel_stop_collision_mesh" file="../../meshes/colored_left_finger_travel_stop_yellow.stl" />
+    <mesh name="finger_right_carriage_collision_mesh" file="../../meshes/colored_right_finger_carriage_grey.stl" />
+    <mesh name="finger_right_travel_stop_collision_mesh" file="../../meshes/colored_right_finger_travel_stop_yellow.stl" />
+    <mesh name="finger_left_front_collision_mesh" file="../../meshes/left_finger_front.stl" />
+    <mesh name="finger_left_mid_collision_mesh" file="../../meshes/left_finger_mid.stl" />
+    <mesh name="finger_left_rear_collision_mesh" file="../../meshes/left_finger_rear.stl" />
+    <mesh name="finger_right_front_collision_mesh" file="../../meshes/right_finger_front.stl" />
+    <mesh name="finger_right_mid_collision_mesh" file="../../meshes/right_finger_mid.stl" />
+    <mesh name="finger_right_rear_collision_mesh" file="../../meshes/right_finger_rear.stl" />
+    <material name="gripper_finger_black_mat" specular="0.42" shininess="0.48" metallic="0.48" roughness="0.48" rgba="0.066667 0.074510 0.070588 1" />
+    <material name="gripper_carriage_grey_mat" specular="0.30" shininess="0.30" metallic="0.62" roughness="0.38" rgba="0.239 0.278 0.271 1" />
+    <material name="gripper_rack_metal_mat" specular="0.72" shininess="0.90" metallic="0.88" roughness="0.18" rgba="0.831373 0.847059 0.831373 1" />
+    <material name="gripper_seeed_yellow_mat" specular="0.22" shininess="0.26" metallic="0.18" roughness="0.34" rgba="0.725 0.835 0.118 1" />
+    <material name="gripper_hardware_black_mat" specular="0.50" shininess="0.72" metallic="0.82" roughness="0.20" rgba="0.019608 0.027451 0.023529 1" />
+    <material name="gripper_base_metal_mat" specular="0.72" shininess="0.90" metallic="0.88" roughness="0.18" rgba="0.831373 0.847059 0.831373 1" />
+  </asset>
+  <worldbody>
+    <body name="end_link" pos="0 0 0" quat="1 0 0 0">
+      <inertial pos="-0.0737654296 -0.0000095081 0.0000070433" mass="0.5" diaginertia="0.00037354 0.00015830 0.00045353" />
+      <geom name="gripper_base_hardware_black_visual" type="mesh" mesh="gripper_base_hardware_black_mesh" material="gripper_hardware_black_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+      <geom name="gripper_base_metal_visual" type="mesh" mesh="gripper_base_metal_mesh" material="gripper_base_metal_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+      <geom name="gripper_base_seeed_yellow_visual" type="mesh" mesh="gripper_base_seeed_yellow_mesh" material="gripper_seeed_yellow_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+      <geom name="gripper_palm_collision" type="mesh" mesh="gripper_base_collision_mesh" rgba="0.18 0.22 0.21 0.12" contype="1" conaffinity="1" condim="6" mass="0.02" friction="1.2 0.10 0.02" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+      <site name="tcp" pos="-0.105 0 0" size="0.008" rgba="1 0.34 0.16 1" group="1" />     
+      <body name="finger_left_link" pos="0 0 0">
+        <joint name="finger_left" type="slide" axis="0 1 0" range="0 0.05" damping="0.8" armature="0.01" limited="true" frictionloss="0" />
+        <inertial pos="0 0 0" mass="0.03" diaginertia="0.00001 0.00001 0.00001" />
+        <geom name="finger_left_body_visual" type="mesh" mesh="finger_left_body_mesh" material="gripper_finger_black_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+        <geom name="finger_left_carriage_visual" type="mesh" mesh="finger_left_carriage_mesh" material="gripper_carriage_grey_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+        <geom name="finger_left_travel_stop_visual" type="mesh" mesh="finger_left_travel_stop_mesh" material="gripper_seeed_yellow_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+        <geom name="finger_left_crossed_rack_visual" type="mesh" mesh="finger_left_crossed_rack_mesh" material="gripper_rack_metal_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+        <geom name="finger_left_front_collision" type="mesh" mesh="finger_left_front_collision_mesh" rgba="0.18 0.22 0.21 0.20" contype="1" conaffinity="1" condim="6" margin="0.00015" mass="0.003" friction="1.5 0.04 0.01" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+        <geom name="finger_left_mid_collision" type="mesh" mesh="finger_left_mid_collision_mesh" rgba="0.18 0.22 0.21 0.20" contype="1" conaffinity="1" condim="6" margin="0.00015" mass="0.003" friction="1.5 0.04 0.01" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+        <geom name="finger_left_rear_collision" type="mesh" mesh="finger_left_rear_collision_mesh" rgba="0.18 0.22 0.21 0.20" contype="1" conaffinity="1" condim="6" margin="0.00015" mass="0.004" friction="1.5 0.04 0.01" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+        <geom name="finger_left_carriage_collision" type="mesh" mesh="finger_left_carriage_collision_mesh" rgba="0.18 0.22 0.21 0.12" contype="1" conaffinity="1" condim="6" mass="0.01" friction="1.5 0.04 0.01" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+        <geom name="finger_left_travel_stop_collision" type="mesh" mesh="finger_left_travel_stop_collision_mesh" rgba="0.18 0.22 0.21 0.12" contype="1" conaffinity="1" condim="6" mass="0.01" friction="1.5 0.04 0.01" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+      </body>
+      <body name="finger_right_link" pos="0 0 0">
+        <joint name="finger_right" type="slide" axis="0 1 0" range="-0.05 0" damping="0.8" armature="0.01" limited="true" frictionloss="0" />
+        <inertial pos="0 0 0" mass="0.03" diaginertia="0.00001 0.00001 0.00001" />
+        <geom name="finger_right_body_visual" type="mesh" mesh="finger_right_body_mesh" material="gripper_finger_black_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+        <geom name="finger_right_carriage_visual" type="mesh" mesh="finger_right_carriage_mesh" material="gripper_carriage_grey_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+        <geom name="finger_right_travel_stop_visual" type="mesh" mesh="finger_right_travel_stop_mesh" material="gripper_seeed_yellow_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+        <geom name="finger_right_crossed_rack_visual" type="mesh" mesh="finger_right_crossed_rack_mesh" material="gripper_rack_metal_mat" contype="0" conaffinity="0" friction="0.8 0.1 0.1" group="1" />
+        <geom name="finger_right_front_collision" type="mesh" mesh="finger_right_front_collision_mesh" rgba="0.18 0.22 0.21 0.20" contype="1" conaffinity="1" condim="6" margin="0.00015" mass="0.003" friction="1.5 0.04 0.01" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+        <geom name="finger_right_mid_collision" type="mesh" mesh="finger_right_mid_collision_mesh" rgba="0.18 0.22 0.21 0.20" contype="1" conaffinity="1" condim="6" margin="0.00015" mass="0.003" friction="1.5 0.04 0.01" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+        <geom name="finger_right_rear_collision" type="mesh" mesh="finger_right_rear_collision_mesh" rgba="0.18 0.22 0.21 0.20" contype="1" conaffinity="1" condim="6" margin="0.00015" mass="0.004" friction="1.5 0.04 0.01" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+        <geom name="finger_right_carriage_collision" type="mesh" mesh="finger_right_carriage_collision_mesh" rgba="0.18 0.22 0.21 0.12" contype="1" conaffinity="1" condim="6" mass="0.01" friction="1.5 0.04 0.01" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+        <geom name="finger_right_travel_stop_collision" type="mesh" mesh="finger_right_travel_stop_collision_mesh" rgba="0.18 0.22 0.21 0.12" contype="1" conaffinity="1" condim="6" mass="0.01" friction="1.5 0.04 0.01" solref="0.002 1" solimp="0.98 0.995 0.0005" group="0" />
+      </body>
+      <body name="eef" pos="-0.105 0 0" quat="1 0 0 0">
+        <site name="grip_site" pos="0 0 0" size="0.005" type="sphere" quat="1 0 0 0" rgba="0 0 0 0" group="1" />
+        <site name="ee" pos="0 0 0" size="0.002" type="sphere" quat="1 0 0 0" rgba="0 0 0 0" group="1" />
+        <site name="grip_site_cylinder" pos="0 0 0" size="0.002 0.02" type="cylinder" quat="1 0 0 0" rgba="0 0 0 0" group="1" />
+        <site name="ee_x" pos="0.025 0 0" size="0.001 0.025" type="cylinder" quat="0.70710678 0 0.70710678 0" rgba="0 0 0 0" group="1" />
+        <site name="ee_y" pos="0 0.025 0" size="0.001 0.025" type="cylinder" quat="0.70710678 0.70710678 0 0" rgba="0 0 0 0" group="1" />
+        <site name="ee_z" pos="0 0 0.025" size="0.001 0.025" type="cylinder" quat="1 0 0 0" rgba="0 0 0 0" group="1" />
+      </body>
+      <site name="ft_frame" pos="0 0 0" size="0.002" rgba="0 0 0 0" group="1" />
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="gripper_position" joint="finger_left" gear="1" kp="100" ctrllimited="true" ctrlrange="0 0.05" forcelimited="true" forcerange="-8 8" />
+  </actuator>
+  <equality>
+    <joint name="finger_coupling" joint1="finger_right" joint2="finger_left" polycoef="0 -1 0 0 0" solref="0.004 1" />
+  </equality>
+  <contact>
+    <exclude body1="finger_left_link" body2="finger_right_link" />
+  </contact>
+  <sensor>
+    <force name="force_ee" site="ft_frame" />
+    <torque name="torque_ee" site="ft_frame" />
+  </sensor>
+</mujoco>

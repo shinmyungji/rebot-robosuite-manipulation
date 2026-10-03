@@ -1,0 +1,41 @@
+{
+  "type": "BASIC",
+  "body_parts": {
+    "arms": {
+      "right": {
+        "type": "JOINT_POSITION",
+        "input_max": 1,
+        "input_min": -1,
+        "output_max": 0.08,
+        "output_min": -0.08,
+        "kp": 60,
+        "damping_ratio": 1,
+        "impedance_mode": "fixed",
+        "input_type": "delta",
+        "use_torque_compensation": true,
+        "qpos_limits": [
+          [
+            -2.8,
+            -3.14,
+            -3.14,
+            -1.87,
+            -1.57,
+            -3.14
+          ],
+          [
+            2.8,
+            0.0,
+            0.0,
+            1.57,
+            1.57,
+            3.14
+          ]
+        ],
+        "interpolation": null,
+        "gripper": {
+          "type": "GRIP"
+        }
+      }
+    }
+  }
+}

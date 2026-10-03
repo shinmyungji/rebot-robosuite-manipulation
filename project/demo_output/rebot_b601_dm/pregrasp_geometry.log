@@ -1,0 +1,97 @@
+[robosuite WARNING] No private macro file found! (macros.py:57)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:58)
+[robosuite WARNING] To setup, run: python /home/qwer1234/Capstone/rebot_autofocus_ws/third_party/robosuite/robosuite/scripts/setup_macros.py (macros.py:59)
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly (e.g. pip install mink==0.0.5), otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)
+[robosuite INFO] Loading controller configuration from: /home/qwer1234/Capstone/rebot_autofocus_ws/project/configs/rebot_b601_dm_joint_position.json (composite_controller_factory.py:121)
+
+=== SETTLE ===
+
+=== OPEN GRIPPER ===
+cube world xyz: [ 0.02654114 -0.01648757  0.82144362]
+tcp  world xyz: [-7.15881258e-02  4.07935725e-07  1.09129613e+00]
+pregrasp physical grasp xyz: [ 0.02654114 -0.01648757  0.92144362]
+alignment physical grasp xyz: [ 0.02654114 -0.01648757  0.83344362]
+lift physical grasp xyz: [ 0.02654114 -0.01648757  0.95344362]
+
+SELECTED GRASP ORIENTATION: pitch=+90 deg, yaw=0 deg; local +X in world=[ 2.22044605e-16  0.00000000e+00 -1.00000000e+00]
+PREGRASP: physical grasp target xyz=[ 0.02654114 -0.01648757  0.92144362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  1.01144362]
+PREGRASP POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.81006 -1.47599  1.23674 -0.      -0.05034]
+
+=== PREGRASP ===
+PREGRASP: step=0, max_joint_error=1.23674, tcp=[-7.0930e-02 -6.0000e-04  1.0915e+00]
+PREGRASP: step=20, max_joint_error=1.19151, tcp=[-0.03506 -0.01288  1.09708]
+PREGRASP: step=40, max_joint_error=1.14826, tcp=[ 0.00561 -0.01544  1.09209]
+PREGRASP: step=60, max_joint_error=1.10638, tcp=[ 0.04779 -0.01758  1.0754 ]
+PREGRASP: step=80, max_joint_error=1.06562, tcp=[ 0.0886  -0.01963  1.04669]
+PREGRASP: step=100, max_joint_error=1.02564, tcp=[ 0.12419 -0.02142  1.01414]
+PREGRASP: step=120, max_joint_error=0.98584, tcp=[ 0.14592 -0.02251  1.05395]
+PREGRASP: step=140, max_joint_error=0.92521, tcp=[ 0.14835 -0.02263  1.06468]
+PREGRASP: step=160, max_joint_error=0.84727, tcp=[ 0.14077 -0.02225  1.05613]
+PREGRASP: step=180, max_joint_error=0.76706, tcp=[ 0.13168 -0.02179  1.04758]
+PREGRASP: step=200, max_joint_error=0.68539, tcp=[ 0.12171 -0.02129  1.03964]
+PREGRASP: step=220, max_joint_error=0.60214, tcp=[ 0.11092 -0.02075  1.0324 ]
+PREGRASP: step=240, max_joint_error=0.51716, tcp=[ 0.09934 -0.02016  1.02597]
+PREGRASP: step=260, max_joint_error=0.43028, tcp=[ 0.08698 -0.01954  1.02044]
+PREGRASP: step=280, max_joint_error=0.34136, tcp=[ 0.07389 -0.01888  1.0159 ]
+PREGRASP: step=300, max_joint_error=0.25024, tcp=[ 0.06012 -0.01818  1.01248]
+PREGRASP: step=320, max_joint_error=0.15680, tcp=[ 0.04574 -0.01746  1.01027]
+PREGRASP: step=340, max_joint_error=0.06236, tcp=[ 0.03139 -0.01673  1.0095 ]
+PREGRASP: step=360, max_joint_error=0.01914, tcp=[ 0.02754 -0.01654  1.01068]
+PREGRASP: target reached (max joint error 0.007317)
+
+PREGRASP SNAPSHOT {"base_pos": [-0.30000000000000004, 0.0, 0.8], "base_quat_wxyz": [1.0, 0.0, 0.0, 0.0], "tcp_pos": [0.02670151508146801, -0.01649519264782034, 1.011307770487454], "tcp_quat_wxyz": [0.7079648026851704, -3.7557251070001106e-05, 0.7062477152658978, -3.781665998626002e-05], "cube_pos": [0.026541141414711606, -0.016487568600564488, 0.8214436159602736], "cube_quat_wxyz": [1.0, 0.0, 0.0, 0.0], "tcp_to_cube_m": 0.18986422241212306, "arm_qpos": [-0.05043924099923957, -1.8092817923673838, -1.4744957354781665, 1.2335924548592916, -1.9434709922826723e-05, -0.05034252094404048], "arm_qvel": [2.0796495315710876e-06, -0.0008677715995060318, -0.001680492258395146, 0.0035418033920984336, 1.2330556372441962e-05, 1.132612108302483e-06], "finger_qpos": [0.04999999997373508, -0.049999997005409066], "ctrl": [1.6438352005951273e-06, 7.825519057323481, -5.752001510573549, -0.23655087232103064, -0.00031448500516609334, 1.6760070134772387e-06, 0.05], "arm_table_clearance": {"robot0_base_link_collision": {"lowest_above_table_m": -1.8571122209487534e-09, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link1_collision": {"lowest_above_table_m": 0.08464999912951301, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link2_collision": {"lowest_above_table_m": 0.11170092682849156, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link3_collision": {"lowest_above_table_m": 0.3395192668978322, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link4_collision": {"lowest_above_table_m": 0.25043902322613887, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link5_collision": {"lowest_above_table_m": 0.2575981937278844, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link6_collision": {"lowest_above_table_m": 0.20847105978570205, "overlaps_table_xy": true, "below_tabletop": false}}, "table_contacts": [{"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}, {"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}, {"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}, {"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}], "robot_contacts": [], "stock_lift_success": false}
+PREGRASP GEOMETRY {"cube_xyz": [0.026541141414711606, -0.016487568600564488, 0.8214436159602736], "physical_grasp_target_xyz": [0.026541141414711606, -0.016487568600564488, 0.9214436159602736], "converted_legacy_tcp_target_xyz": [0.026541141414711585, -0.016487568600564488, 1.0114436159602735], "actual_legacy_tcp_xyz": [0.02670151508146801, -0.01649519264782034, 1.011307770487454], "actual_physical_grasp_xyz": [0.02692006446675591, -0.016504786213477684, 0.9213080363537929], "physical_grasp_error_m": 0.00040281627978330055, "orientation_error_deg": 0.1392669822154158, "tcp_to_grasp_world_offset": [0.00021854938528789562, -9.59356565734333e-06, -0.08999973413366111], "local_positive_x_world": [0.0024283265031988404, -0.00010659517397048146, -0.9999970459295678], "robot_contacts_seen": []}
+
+=== GRIPPER FRAME DEBUG ===
+CUBE: [ 0.026541 -0.016488  0.821444]
+CONTROLLED TCP: [ 0.026702 -0.016495  1.011308]
+TCP local +X in world: [ 2.42800e-03 -1.07000e-04 -9.99997e-01]
+TCP local -X in world: [-2.42800e-03  1.07000e-04  9.99997e-01]
+TCP local +Y in world: [ 0.00e+00  1.00e+00 -1.07e-04]
+TCP local +Z in world: [ 0.999997 -0.        0.002428]
+
+--- SITES ---
+SITE gripper0_right_tcp [ 0.026702 -0.016495  1.011308]
+SITE gripper0_right_ft_frame [ 0.026956 -0.016506  0.906308]
+SITE gripper0_right_grip_site [ 0.026702 -0.016495  1.011308]
+SITE gripper0_right_ee [ 0.026702 -0.016495  1.011308]
+SITE gripper0_right_grip_site_cylinder [ 0.026702 -0.016495  1.011308]
+SITE gripper0_right_ee_x [ 0.026762 -0.016498  0.986308]
+SITE gripper0_right_ee_y [0.026702 0.008505 1.011305]
+SITE gripper0_right_ee_z [ 0.051701 -0.016495  1.011368]
+
+--- BODIES ---
+BODY left_eef_target [ 0.  0. -1.]
+BODY right_eef_target [ 0.  0. -1.]
+BODY robot0_right_hand [ 0.026956 -0.016506  0.906308]
+BODY gripper0_right_end_link [ 0.026956 -0.016506  0.906308]
+BODY gripper0_right_finger_left_link [0.026957 0.033494 0.906303]
+BODY gripper0_right_finger_right_link [ 0.026956 -0.066506  0.906313]
+BODY gripper0_right_eef [ 0.026702 -0.016495  1.011308]
+
+--- GRIPPER GEOMS ---
+GEOM gripper0_right_gripper_palm_collision [ 0.02674  -0.016496  0.996975]
+GEOM gripper0_right_finger_left_body_visual [0.026853 0.04491  0.954683]
+GEOM gripper0_right_finger_left_carriage_visual [0.028507 0.051764 0.978424]
+GEOM gripper0_right_finger_left_travel_stop_visual [0.026776 0.053302 0.980719]
+GEOM gripper0_right_finger_left_crossed_rack_visual [0.038852 0.022633 0.991959]
+GEOM gripper0_right_finger_left_front_collision [0.026914 0.039483 0.926417]
+GEOM gripper0_right_finger_left_mid_collision [0.026856 0.040186 0.946715]
+GEOM gripper0_right_finger_left_rear_collision [0.026829 0.047212 0.964359]
+GEOM gripper0_right_finger_left_carriage_collision [0.028507 0.051764 0.978424]
+GEOM gripper0_right_finger_left_travel_stop_collision [0.026776 0.053302 0.980719]
+GEOM gripper0_right_finger_right_body_visual [ 0.026894 -0.078022  0.95471 ]
+GEOM gripper0_right_finger_right_carriage_visual [ 0.025178 -0.084838  0.978381]
+GEOM gripper0_right_finger_right_travel_stop_visual [ 0.02681  -0.086332  0.980725]
+GEOM gripper0_right_finger_right_crossed_rack_visual [ 0.014645 -0.055627  0.991909]
+GEOM gripper0_right_finger_right_front_collision [ 0.026901 -0.072491  0.926429]
+GEOM gripper0_right_finger_right_mid_collision [ 0.02688  -0.073263  0.946758]
+GEOM gripper0_right_finger_right_rear_collision [ 0.026921 -0.080374  0.964345]
+GEOM gripper0_right_finger_right_carriage_collision [ 0.025178 -0.084838  0.978381]
+GEOM gripper0_right_finger_right_travel_stop_collision [ 0.02681  -0.086332  0.980725]
+
+PREGRASP-ONLY COMPLETE.
+Inspect GUI and logs before attempting the full grasp.
+PREGRASP robot contacts over entire run: []
+Xlib:  extension "NV-GLX" missing on display ":1".

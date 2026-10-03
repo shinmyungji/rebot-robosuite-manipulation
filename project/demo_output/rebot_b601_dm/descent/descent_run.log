@@ -1,0 +1,500 @@
+[robosuite WARNING] No private macro file found! (macros.py:57)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:58)
+[robosuite WARNING] To setup, run: python /home/qwer1234/Capstone/rebot_autofocus_ws/third_party/robosuite/robosuite/scripts/setup_macros.py (macros.py:59)
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly (e.g. pip install mink==0.0.5), otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)
+[robosuite INFO] Loading controller configuration from: /home/qwer1234/Capstone/rebot_autofocus_ws/project/configs/rebot_b601_dm_joint_position.json (composite_controller_factory.py:121)
+READY VALIDATION {"minimum_joint_margin_rad": 0.23351559120083132, "moving_arm_table_clearance_m": 0.08464999912951301, "gripper_table_clearance_m": 0.13500000238002877, "physical_grasp_xyz": [0.01, 0.0, 0.95], "tcp_target_xyz": [0.00999999999999998, 0.0, 1.04], "q": [-1.6370309160015684e-06, -1.738218917468406, -1.5038996530709692, 1.3364844087991687, -3.6731461223593066e-06, 9.4689836188883e-05], "robot_contacts": []}
+
+=== SETTLE ===
+
+=== OPEN GRIPPER ===
+cube world xyz: [ 0.02654114 -0.01648757  0.82144362]
+tcp  world xyz: [ 1.00000000e-02 -4.53940012e-17  1.04000000e+00]
+pregrasp physical grasp xyz: [ 0.02654114 -0.01648757  0.92144362]
+alignment physical grasp xyz: [ 0.02654114 -0.01648757  0.83344362]
+lift physical grasp xyz: [ 0.02654114 -0.01648757  0.95344362]
+APPROACH PLAN {"minimum_joint_margin_rad": 0.21969806028684635, "moving_arm_table_clearance_m": 0.08464999912951301, "gripper_table_clearance_m": 0.10644361834030205, "waypoint_count": 11, "max_adjacent_delta_q_rad": 0.019101080832642614, "checked_configurations": 103, "robot_contacts": []}
+APPROACH WAYPOINTS [{"phase": "ABOVE_CUBE", "physical_grasp_target": [0.013308228282942322, -0.003297513720112898, 0.95], "tcp_target": [0.013308228282942302, -0.003297513720112898, 1.04], "q": [-0.010523205609207038, -1.7509769129063617, -1.5190013402207938, 1.3388281003066178, -3.634499680464068e-06, -0.01042687874188839]}, {"phase": "ABOVE_CUBE", "physical_grasp_target": [0.016616456565884643, -0.006595027440225796, 0.95], "tcp_target": [0.016616456565884622, -0.006595027440225796, 1.04], "q": [-0.02082271876356972, -1.7638989354863723, -1.5344705082910906, 1.3413752452029777, -3.5966729907501077e-06, -0.02072639189604065]}, {"phase": "ABOVE_CUBE", "physical_grasp_target": [0.019924684848826965, -0.009892541160338695, 0.95], "tcp_target": [0.019924684848826944, -0.009892541160338695, 1.04], "q": [-0.030905015526802596, -1.7769856680620717, -1.5503141985282602, 1.3441322019057254, -3.559651906548874e-06, -0.030808688659066143]}, {"phase": "ABOVE_CUBE", "physical_grasp_target": [0.023232913131769287, -0.013190054880451592, 0.95], "tcp_target": [0.023232913131769267, -0.013190054880451592, 1.04], "q": [-0.04077490970372764, -1.7902383048107562, -1.5665401465154767, 1.3471055118442392, -3.5234219023929293e-06, -0.04067858283578685]}, {"phase": "ABOVE_CUBE", "physical_grasp_target": [0.02654114141471161, -0.016487568600564488, 0.95], "tcp_target": [0.02654114141471159, -0.016487568600564488, 1.04], "q": [-0.05043718002176343, -1.8036585776501484, -1.5831568488427707, 1.3503019397131537, -3.4879681509147598e-06, -0.05034085315362142]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.9452406026600455], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.0352406026600456], "q": [-0.05043712656502289, -1.8038624995452384, -1.5642596899052077, 1.331200858880511, -3.48796834720978e-06, -0.05034079969688085]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.9404812053200912], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.0304812053200911], "q": [-0.05043707310828231, -1.8044163896451926, -1.5457910894540765, 1.3121783683294355, -3.487968542957103e-06, -0.050340746240140344]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.9357218079801368], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.025721807980137], "q": [-0.05043701965154157, -1.8053162520519501, -1.5277399087309724, 1.2932273251995838, -3.4879687394374333e-06, -0.05034069278339977]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.9309624106401824], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.0209624106401824], "q": [-0.05043696619480108, -1.8065585487220746, -1.5100960785895527, 1.2743411983880497, -3.487968935326234e-06, -0.05034063932665902]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.926203013300228], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.016203013300228], "q": [-0.05043691273806058, -1.8081401457562647, -1.4928505018269398, 1.2555140245912566, -3.4879691314842854e-06, -0.05034058586991873]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.9214436159602736], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.0114436159602735], "q": [-0.05043685928131999, -1.8100582650635826, -1.475994967140761, 1.2367403705977702, -3.4879693277147545e-06, -0.050340532413178]}]
+
+=== ABOVE_CUBE 1/11 ===
+ABOVE_CUBE 1/11: step=0, max_joint_error=0.01510, tcp=[ 1.01800e-02 -1.80000e-04  1.03999e+00]
+ABOVE_CUBE 1/11: step=20, max_joint_error=0.00544, tcp=[ 0.01331 -0.00325  1.03985]
+ABOVE_CUBE 1/11: step=40, max_joint_error=0.00279, tcp=[ 0.01335 -0.0033   1.03996]
+ABOVE_CUBE 1/11: target reached (max joint error 0.001689)
+
+=== ABOVE_CUBE 2/11 ===
+ABOVE_CUBE 2/11: step=0, max_joint_error=0.01567, tcp=[ 0.01351 -0.00348  1.03997]
+ABOVE_CUBE 2/11: step=20, max_joint_error=0.00617, tcp=[ 0.01662 -0.00655  1.03983]
+ABOVE_CUBE 2/11: step=40, max_joint_error=0.00316, tcp=[ 0.01666 -0.0066   1.03995]
+ABOVE_CUBE 2/11: target reached (max joint error 0.001674)
+
+=== ABOVE_CUBE 3/11 ===
+ABOVE_CUBE 3/11: step=0, max_joint_error=0.01602, tcp=[ 0.01681 -0.00678  1.03997]
+ABOVE_CUBE 3/11: step=20, max_joint_error=0.00605, tcp=[ 0.01993 -0.00985  1.03983]
+ABOVE_CUBE 3/11: step=40, max_joint_error=0.00310, tcp=[ 0.01997 -0.0099   1.03995]
+ABOVE_CUBE 3/11: target reached (max joint error 0.001641)
+
+=== ABOVE_CUBE 4/11 ===
+ABOVE_CUBE 4/11: step=0, max_joint_error=0.01641, tcp=[ 0.02012 -0.01007  1.03997]
+ABOVE_CUBE 4/11: step=20, max_joint_error=0.00592, tcp=[ 0.02324 -0.01315  1.03983]
+ABOVE_CUBE 4/11: step=40, max_joint_error=0.00303, tcp=[ 0.02328 -0.0132   1.03995]
+ABOVE_CUBE 4/11: target reached (max joint error 0.001661)
+
+=== ABOVE_CUBE 5/11 ===
+ABOVE_CUBE 5/11: step=0, max_joint_error=0.01682, tcp=[ 0.02343 -0.01337  1.03997]
+ABOVE_CUBE 5/11: step=20, max_joint_error=0.00582, tcp=[ 0.02656 -0.01645  1.03982]
+ABOVE_CUBE 5/11: step=40, max_joint_error=0.00298, tcp=[ 0.02659 -0.01649  1.03995]
+ABOVE_CUBE 5/11: target reached (max joint error 0.001689)
+
+=== PREGRASP 6/11 ===
+PREGRASP 6/11: step=0, max_joint_error=0.01867, tcp=[ 0.02655 -0.01649  1.03974]
+PREGRASP 6/11: step=20, max_joint_error=0.00684, tcp=[ 0.02625 -0.01647  1.03557]
+PREGRASP 6/11: step=40, max_joint_error=0.00224, tcp=[ 0.02643 -0.01648  1.03533]
+PREGRASP 6/11: target reached (max joint error 0.001427)
+
+=== PREGRASP 7/11 ===
+PREGRASP 7/11: step=0, max_joint_error=0.02037, tcp=[ 0.02646 -0.01648  1.03505]
+PREGRASP 7/11: step=20, max_joint_error=0.00736, tcp=[ 0.02623 -0.01647  1.03083]
+PREGRASP 7/11: step=40, max_joint_error=0.00241, tcp=[ 0.02643 -0.01648  1.03058]
+PREGRASP 7/11: target reached (max joint error 0.001449)
+
+=== PREGRASP 8/11 ===
+PREGRASP 8/11: step=0, max_joint_error=0.02032, tcp=[ 0.02646 -0.01648  1.03029]
+PREGRASP 8/11: step=20, max_joint_error=0.00730, tcp=[ 0.02623 -0.01647  1.02607]
+PREGRASP 8/11: step=40, max_joint_error=0.00239, tcp=[ 0.02643 -0.01648  1.02582]
+PREGRASP 8/11: target reached (max joint error 0.001439)
+
+=== PREGRASP 9/11 ===
+PREGRASP 9/11: step=0, max_joint_error=0.02025, tcp=[ 0.02646 -0.01648  1.02553]
+PREGRASP 9/11: step=20, max_joint_error=0.00724, tcp=[ 0.02623 -0.01647  1.02131]
+PREGRASP 9/11: step=40, max_joint_error=0.00237, tcp=[ 0.02643 -0.01648  1.02106]
+PREGRASP 9/11: target reached (max joint error 0.001429)
+
+=== PREGRASP 10/11 ===
+PREGRASP 10/11: step=0, max_joint_error=0.02018, tcp=[ 0.02646 -0.01648  1.02077]
+PREGRASP 10/11: step=20, max_joint_error=0.00719, tcp=[ 0.02623 -0.01647  1.01654]
+PREGRASP 10/11: step=40, max_joint_error=0.00235, tcp=[ 0.02643 -0.01648  1.0163 ]
+PREGRASP 10/11: target reached (max joint error 0.001501)
+
+=== PREGRASP 11/11 ===
+PREGRASP 11/11: step=0, max_joint_error=0.02019, tcp=[ 0.02646 -0.01648  1.01602]
+PREGRASP 11/11: step=20, max_joint_error=0.00716, tcp=[ 0.02623 -0.01647  1.01178]
+PREGRASP 11/11: step=40, max_joint_error=0.00235, tcp=[ 0.02643 -0.01648  1.01154]
+PREGRASP 11/11: target reached (max joint error 0.001497)
+
+PREGRASP SNAPSHOT {"base_pos": [-0.30000000000000004, 0.0, 0.8], "base_quat_wxyz": [1.0, 0.0, 0.0, 0.0], "tcp_pos": [0.026508534172573983, -0.01648599891637662, 1.0114714672478136], "tcp_quat_wxyz": [0.7069308985304962, 7.828222813018807e-06, 0.7072826200173911, 7.93212730416261e-06], "cube_pos": [0.026541141414711606, -0.016487568600564488, 0.8214436159602736], "cube_quat_wxyz": [1.0, 0.0, 0.0, 0.0], "tcp_to_cube_m": 0.19002785409159245, "arm_qpos": [-0.05043641814195096, -1.81021834533597, -1.4763030664266712, 1.23738517286674, -6.753460264913697e-07, -0.05034023887367888], "arm_qvel": [-3.822633268113907e-07, 0.00018030413059423278, 0.0003468370559832427, -0.0007251347409047206, -2.081312595766405e-06, -1.5712194273277524e-07], "finger_qpos": [0.04999999938737517, -0.05000000000218692], "ctrl": [-3.019408131181734e-07, 7.8283108003725115, -5.744544091564254, -0.2336143248894133, -0.0003105986839538811, -2.8523970360058793e-07, 0.05], "arm_table_clearance": {"robot0_base_link_collision": {"lowest_above_table_m": -1.8571122209487534e-09, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link1_collision": {"lowest_above_table_m": 0.08464999912951301, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link2_collision": {"lowest_above_table_m": 0.11170115571331854, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link3_collision": {"lowest_above_table_m": 0.33967606974082165, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link4_collision": {"lowest_above_table_m": 0.2503802205466519, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link5_collision": {"lowest_above_table_m": 0.2576580047198893, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link6_collision": {"lowest_above_table_m": 0.20866840851414328, "overlaps_table_xy": true, "below_tabletop": false}}, "table_contacts": [{"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}, {"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}, {"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}, {"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}], "robot_contacts": [], "stock_lift_success": false}
+PREGRASP GEOMETRY {"cube_xyz": [0.026541141414711606, -0.016487568600564488, 0.8214436159602736], "physical_grasp_target_xyz": [0.026541141414711606, -0.016487568600564488, 0.9214436159602736], "converted_legacy_tcp_target_xyz": [0.026541141414711585, -0.016487568600564488, 1.0114436159602735], "actual_legacy_tcp_xyz": [0.026508534172573983, -0.01648599891637662, 1.0114714672478136], "actual_physical_grasp_xyz": [0.02646376733708883, -0.01648399295464836, 0.921471478403889], "physical_grasp_error_m": 8.231554467969364e-05, "orientation_error_deg": 0.028528052083748142, "tcp_to_grasp_world_offset": [-4.4766835485151967e-05, 2.0059617282591256e-06, -0.0899999888439246], "local_positive_x_world": [-0.0004974092831683552, 2.228846364732362e-05, -0.9999998760436066], "robot_contacts_seen": []}
+
+=== GRIPPER FRAME DEBUG ===
+CUBE: [ 0.026541 -0.016488  0.821444]
+CONTROLLED TCP: [ 0.026509 -0.016486  1.011471]
+TCP local +X in world: [-4.97e-04  2.20e-05 -1.00e+00]
+TCP local -X in world: [ 4.97e-04 -2.20e-05  1.00e+00]
+TCP local +Y in world: [-0.0e+00  1.0e+00  2.2e-05]
+TCP local +Z in world: [ 1.00e+00  0.00e+00 -4.97e-04]
+
+--- SITES ---
+SITE gripper0_right_tcp [ 0.026509 -0.016486  1.011471]
+SITE gripper0_right_ft_frame [ 0.026456 -0.016484  0.906471]
+SITE gripper0_right_grip_site [ 0.026509 -0.016486  1.011471]
+SITE gripper0_right_ee [ 0.026509 -0.016486  1.011471]
+SITE gripper0_right_grip_site_cylinder [ 0.026509 -0.016486  1.011471]
+SITE gripper0_right_ee_x [ 0.026496 -0.016485  0.986471]
+SITE gripper0_right_ee_y [0.026509 0.008514 1.011472]
+SITE gripper0_right_ee_z [ 0.051509 -0.016486  1.011459]
+
+--- BODIES ---
+BODY left_eef_target [ 0.  0. -1.]
+BODY right_eef_target [ 0.  0. -1.]
+BODY robot0_right_hand [ 0.026456 -0.016484  0.906471]
+BODY gripper0_right_end_link [ 0.026456 -0.016484  0.906471]
+BODY gripper0_right_finger_left_link [0.026456 0.033516 0.906473]
+BODY gripper0_right_finger_right_link [ 0.026456 -0.066484  0.90647 ]
+BODY gripper0_right_eef [ 0.026509 -0.016486  1.011471]
+
+--- GRIPPER GEOMS ---
+GEOM gripper0_right_gripper_palm_collision [ 0.026505 -0.016485  0.997138]
+GEOM gripper0_right_finger_left_body_visual [0.026495 0.044927 0.954854]
+GEOM gripper0_right_finger_left_carriage_visual [0.028218 0.051777 0.978592]
+GEOM gripper0_right_finger_left_travel_stop_visual [0.026493 0.053315 0.980892]
+GEOM gripper0_right_finger_left_crossed_rack_visual [0.038603 0.022644 0.992093]
+GEOM gripper0_right_finger_left_front_collision [0.026473 0.039503 0.926588]
+GEOM gripper0_right_finger_left_mid_collision [0.026474 0.040203 0.946886]
+GEOM gripper0_right_finger_left_rear_collision [0.026498 0.047227 0.964531]
+GEOM gripper0_right_finger_left_carriage_collision [0.028218 0.051777 0.978592]
+GEOM gripper0_right_finger_left_travel_stop_collision [0.026493 0.053315 0.980892]
+GEOM gripper0_right_finger_right_body_visual [ 0.026535 -0.078005  0.954866]
+GEOM gripper0_right_finger_right_carriage_visual [ 0.024888 -0.084825  0.978541]
+GEOM gripper0_right_finger_right_travel_stop_visual [ 0.026528 -0.086319  0.98088 ]
+GEOM gripper0_right_finger_right_crossed_rack_visual [ 0.014395 -0.055616  0.992103]
+GEOM gripper0_right_finger_right_front_collision [ 0.02646  -0.072471  0.926586]
+GEOM gripper0_right_finger_right_mid_collision [ 0.026498 -0.073245  0.946914]
+GEOM gripper0_right_finger_right_rear_collision [ 0.026591 -0.080359  0.9645  ]
+GEOM gripper0_right_finger_right_carriage_collision [ 0.024888 -0.084825  0.978541]
+GEOM gripper0_right_finger_right_travel_stop_collision [ 0.026528 -0.086319  0.98088 ]
+APPROACH EXECUTION {"max_orientation_error_deg": 0.42494697143114313, "samples": 744, "robot_contacts": []}
+
+=== SOLVE DESCENT PATH ===
+DESCENT_01: physical grasp target xyz=[ 0.02654114 -0.01648757  0.91944362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  1.00944362]
+DESCENT_01 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.81096 -1.46903  1.22887 -0.      -0.05034]
+DESCENT_01: max dq=0.0079 rad
+DESCENT_02: physical grasp target xyz=[ 0.02654114 -0.01648757  0.91744362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  1.00744362]
+DESCENT_02 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.81193 -1.46213  1.221   -0.      -0.05034]
+DESCENT_02: max dq=0.0079 rad
+DESCENT_03: physical grasp target xyz=[ 0.02654114 -0.01648757  0.91544362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  1.00544362]
+DESCENT_03 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.81295 -1.45529  1.21314 -0.      -0.05034]
+DESCENT_03: max dq=0.0079 rad
+DESCENT_04: physical grasp target xyz=[ 0.02654114 -0.01648757  0.91344362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  1.00344362]
+DESCENT_04 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.81403 -1.44852  1.20529 -0.      -0.05034]
+DESCENT_04: max dq=0.0079 rad
+DESCENT_05: physical grasp target xyz=[ 0.02654114 -0.01648757  0.91144362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  1.00144362]
+DESCENT_05 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.81517 -1.44182  1.19745 -0.      -0.05034]
+DESCENT_05: max dq=0.0078 rad
+DESCENT_06: physical grasp target xyz=[ 0.02654114 -0.01648757  0.90944362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.99944362]
+DESCENT_06 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.81637 -1.43518  1.18961 -0.      -0.05034]
+DESCENT_06: max dq=0.0078 rad
+DESCENT_07: physical grasp target xyz=[ 0.02654114 -0.01648757  0.90744362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.99744362]
+DESCENT_07 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.81763 -1.42861  1.18178 -0.      -0.05034]
+DESCENT_07: max dq=0.0078 rad
+DESCENT_08: physical grasp target xyz=[ 0.02654114 -0.01648757  0.90544362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.99544362]
+DESCENT_08 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.81894 -1.4221   1.17396 -0.      -0.05034]
+DESCENT_08: max dq=0.0078 rad
+DESCENT_09: physical grasp target xyz=[ 0.02654114 -0.01648757  0.90344362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.99344362]
+DESCENT_09 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.82032 -1.41565  1.16614 -0.      -0.05034]
+DESCENT_09: max dq=0.0078 rad
+DESCENT_10: physical grasp target xyz=[ 0.02654114 -0.01648757  0.90144362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.99144362]
+DESCENT_10 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.82175 -1.40927  1.15833 -0.      -0.05034]
+DESCENT_10: max dq=0.0078 rad
+DESCENT_11: physical grasp target xyz=[ 0.02654114 -0.01648757  0.89944362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.98944362]
+DESCENT_11 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.82323 -1.40296  1.15053 -0.      -0.05034]
+DESCENT_11: max dq=0.0078 rad
+DESCENT_12: physical grasp target xyz=[ 0.02654114 -0.01648757  0.89744362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.98744362]
+DESCENT_12 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.82478 -1.3967   1.14273 -0.      -0.05034]
+DESCENT_12: max dq=0.0078 rad
+DESCENT_13: physical grasp target xyz=[ 0.02654114 -0.01648757  0.89544362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.98544362]
+DESCENT_13 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.82638 -1.39051  1.13493 -0.      -0.05034]
+DESCENT_13: max dq=0.0078 rad
+DESCENT_14: physical grasp target xyz=[ 0.02654114 -0.01648757  0.89344362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.98344362]
+DESCENT_14 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.82804 -1.38438  1.12714 -0.      -0.05034]
+DESCENT_14: max dq=0.0078 rad
+DESCENT_15: physical grasp target xyz=[ 0.02654114 -0.01648757  0.89144362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.98144362]
+DESCENT_15 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.82976 -1.37831  1.11936 -0.      -0.05034]
+DESCENT_15: max dq=0.0078 rad
+DESCENT_16: physical grasp target xyz=[ 0.02654114 -0.01648757  0.88944362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.97944362]
+DESCENT_16 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.83153 -1.37231  1.11158 -0.      -0.05034]
+DESCENT_16: max dq=0.0078 rad
+DESCENT_17: physical grasp target xyz=[ 0.02654114 -0.01648757  0.88744362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.97744362]
+DESCENT_17 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.83336 -1.36637  1.10381 -0.      -0.05034]
+DESCENT_17: max dq=0.0078 rad
+DESCENT_18: physical grasp target xyz=[ 0.02654114 -0.01648757  0.88544362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.97544362]
+DESCENT_18 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.83525 -1.36048  1.09604 -0.      -0.05034]
+DESCENT_18: max dq=0.0078 rad
+DESCENT_19: physical grasp target xyz=[ 0.02654114 -0.01648757  0.88344362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.97344362]
+DESCENT_19 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.8372  -1.35466  1.08827 -0.      -0.05034]
+DESCENT_19: max dq=0.0078 rad
+DESCENT_20: physical grasp target xyz=[ 0.02654114 -0.01648757  0.88144362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.97144362]
+DESCENT_20 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.8392  -1.3489   1.08051 -0.      -0.05034]
+DESCENT_20: max dq=0.0078 rad
+DESCENT_21: physical grasp target xyz=[ 0.02654114 -0.01648757  0.87944362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.96944362]
+DESCENT_21 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.84126 -1.34321  1.07275 -0.      -0.05034]
+DESCENT_21: max dq=0.0078 rad
+DESCENT_22: physical grasp target xyz=[ 0.02654114 -0.01648757  0.87744362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.96744362]
+DESCENT_22 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.84337 -1.33757  1.065   -0.      -0.05034]
+DESCENT_22: max dq=0.0078 rad
+DESCENT_23: physical grasp target xyz=[ 0.02654114 -0.01648757  0.87544362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.96544362]
+DESCENT_23 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.84554 -1.33199  1.05725 -0.      -0.05034]
+DESCENT_23: max dq=0.0077 rad
+DESCENT_24: physical grasp target xyz=[ 0.02654114 -0.01648757  0.87344362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.96344362]
+DESCENT_24 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.84777 -1.32647  1.04951 -0.      -0.05034]
+DESCENT_24: max dq=0.0077 rad
+DESCENT_25: physical grasp target xyz=[ 0.02654114 -0.01648757  0.87144362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.96144362]
+DESCENT_25 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.85005 -1.32102  1.04177 -0.      -0.05034]
+DESCENT_25: max dq=0.0077 rad
+DESCENT_26: physical grasp target xyz=[ 0.02654114 -0.01648757  0.86944362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.95944362]
+DESCENT_26 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.8524  -1.31562  1.03403 -0.      -0.05034]
+DESCENT_26: max dq=0.0077 rad
+DESCENT_27: physical grasp target xyz=[ 0.02654114 -0.01648757  0.86744362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.95744362]
+DESCENT_27 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.85479 -1.31028  1.0263  -0.      -0.05034]
+DESCENT_27: max dq=0.0077 rad
+DESCENT_28: physical grasp target xyz=[ 0.02654114 -0.01648757  0.86544362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.95544362]
+DESCENT_28 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.85724 -1.30501  1.01857 -0.      -0.05034]
+DESCENT_28: max dq=0.0077 rad
+DESCENT_29: physical grasp target xyz=[ 0.02654114 -0.01648757  0.86344362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.95344362]
+DESCENT_29 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.85975 -1.29979  1.01084 -0.      -0.05034]
+DESCENT_29: max dq=0.0077 rad
+DESCENT_30: physical grasp target xyz=[ 0.02654114 -0.01648757  0.86144362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.95144362]
+DESCENT_30 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.86232 -1.29463  1.00312 -0.      -0.05034]
+DESCENT_30: max dq=0.0077 rad
+DESCENT_31: physical grasp target xyz=[ 0.02654114 -0.01648757  0.85944362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.94944362]
+DESCENT_31 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.86494 -1.28953  0.9954  -0.      -0.05034]
+DESCENT_31: max dq=0.0077 rad
+DESCENT_32: physical grasp target xyz=[ 0.02654114 -0.01648757  0.85744362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.94744362]
+DESCENT_32 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.86761 -1.2845   0.98768 -0.      -0.05034]
+DESCENT_32: max dq=0.0077 rad
+DESCENT_33: physical grasp target xyz=[ 0.02654114 -0.01648757  0.85544362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.94544362]
+DESCENT_33 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.87035 -1.27952  0.97997 -0.      -0.05034]
+DESCENT_33: max dq=0.0077 rad
+DESCENT_34: physical grasp target xyz=[ 0.02654114 -0.01648757  0.85344362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.94344362]
+DESCENT_34 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.87313 -1.2746   0.97227 -0.      -0.05034]
+DESCENT_34: max dq=0.0077 rad
+DESCENT_35: physical grasp target xyz=[ 0.02654114 -0.01648757  0.85144362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.94144362]
+DESCENT_35 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.87598 -1.26974  0.96456 -0.      -0.05034]
+DESCENT_35: max dq=0.0077 rad
+DESCENT_36: physical grasp target xyz=[ 0.02654114 -0.01648757  0.84944362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.93944362]
+DESCENT_36 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.87887 -1.26493  0.95686 -0.      -0.05034]
+DESCENT_36: max dq=0.0077 rad
+DESCENT_37: physical grasp target xyz=[ 0.02654114 -0.01648757  0.84744362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.93744362]
+DESCENT_37 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.88183 -1.26019  0.94917 -0.      -0.05034]
+DESCENT_37: max dq=0.0077 rad
+DESCENT_38: physical grasp target xyz=[ 0.02654114 -0.01648757  0.84544362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.93544362]
+DESCENT_38 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.88484 -1.25551  0.94148 -0.      -0.05034]
+DESCENT_38: max dq=0.0077 rad
+DESCENT_39: physical grasp target xyz=[ 0.02654114 -0.01648757  0.84344362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.93344362]
+DESCENT_39 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.8879  -1.25089  0.93379 -0.      -0.05034]
+DESCENT_39: max dq=0.0077 rad
+DESCENT_40: physical grasp target xyz=[ 0.02654114 -0.01648757  0.84144362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.93144362]
+DESCENT_40 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.89102 -1.24632  0.92611 -0.      -0.05034]
+DESCENT_40: max dq=0.0077 rad
+DESCENT_41: physical grasp target xyz=[ 0.02654114 -0.01648757  0.83944362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.92944362]
+DESCENT_41 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.89419 -1.24182  0.91843 -0.      -0.05034]
+DESCENT_41: max dq=0.0077 rad
+DESCENT_42: physical grasp target xyz=[ 0.02654114 -0.01648757  0.83744362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.92744362]
+DESCENT_42 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.89742 -1.23737  0.91076 -0.      -0.05034]
+DESCENT_42: max dq=0.0077 rad
+DESCENT_43: physical grasp target xyz=[ 0.02654114 -0.01648757  0.83544362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.92544362]
+DESCENT_43 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.9007  -1.23298  0.90309 -0.      -0.05034]
+DESCENT_43: max dq=0.0077 rad
+DESCENT_44: physical grasp target xyz=[ 0.02654114 -0.01648757  0.83344362], converted legacy TCP target xyz=[ 0.02654114 -0.01648757  0.92344362]
+DESCENT_44 POSE IK: reachable=True, pos_error=0.000 mm, rot_error=0.000 deg, q=[-0.05044 -1.90404 -1.22866  0.89542 -0.      -0.05034]
+DESCENT_44: max dq=0.0077 rad
+
+=== EXECUTE DESCENT ===
+DESCENT PLAN {"waypoint_count": 44, "cartesian_step_m": 0.001999999999999999, "maximum_adjacent_delta_q_rad": 0.007874323057420751, "physical_grasp_target_xyz": [0.026541141414711606, -0.016487568600564488, 0.8334436159602736], "waypoint_q": [[-0.05043683681766153, -1.8109641154731184, -1.469026494492824, 1.2288660475403494, -3.487969407011201e-06, -0.05034050994951717], [-0.05043681435399938, -1.8119287841309866, -1.4621250726287547, 1.2209999570184173, -3.4879694911354883e-06, -0.050340487485857635], [-0.05043679189034187, -1.8129521109365192, -1.4552902146778146, 1.2131417722619455, -3.4879695796009963e-06, -0.05034046502219561], [-0.050436769426683646, -1.8140339432955308, -1.4485214552884096, 1.2052911805135311, -3.487969650373099e-06, -0.050340442558542045], [-0.05043674696302083, -1.8151741356622606, -1.4418183498862098, 1.197447882744606, -3.4879697422934995e-06, -0.050340420094875916], [-0.05043672449936259, -1.816372549096347, -1.4351804739655718, 1.1896115933898845, -3.4879698205629852e-06, -0.05034039763121981], [-0.05043670203570169, -1.8176290508335, -1.42860742241189, 1.1817820400990529, -3.4879699057359512e-06, -0.05034037516756136], [-0.05043667957204418, -1.8189435138693009, -1.422098808853414, 1.173958963504769, -3.487969986614966e-06, -0.050340352703901275], [-0.05043665710838425, -1.8203158165551694, -1.4156542650405168, 1.1661421170060144, -3.4879700700629197e-06, -0.05034033024024242], [-0.05043663464472372, -1.8217458422058042, -1.4092734402509344, 1.1583312665658005, -3.48797015040953e-06, -0.050340307776582466], [-0.05043661218106532, -1.8232334787175575, -1.402956000719548, 1.1505261905226574, -3.487970233311037e-06, -0.0503402853129248], [-0.05043658971740643, -1.8247786181968593, -1.3967016290910872, 1.1427266794149016, -3.487970316982505e-06, -0.050340262849263184], [-0.05043656725374554, -1.8263811565982253, -1.3905100238945107, 1.1349325358169617, -3.487970403481259e-06, -0.050340240385603884], [-0.05043654479008696, -1.8280409933713442, -1.3843808990379565, 1.12714357418729, -3.4879704842775854e-06, -0.050340217921943584], [-0.05043652232642724, -1.829758031116711, -1.3783139833228526, 1.1193596207268193, -3.4879705670677855e-06, -0.05034019545828349], [-0.05043649986276722, -1.831532175249239, -1.372309019976257, 1.1115805132477006, -3.4879706488930943e-06, -0.05034017299462575], [-0.05043647739910935, -1.8333633336696102, -1.366365766200377, 1.1038061010514557, -3.487970729645057e-06, -0.05034015053096557], [-0.0504364549354494, -1.8352514164427716, -1.3604839927381802, 1.0960362448161027, -3.4879708110186546e-06, -0.05034012806730485], [-0.05043643247178949, -1.8371963354833236, -1.3546634834543418, 1.0882708164917108, -3.4879708937163443e-06, -0.05034010560364882], [-0.0504364100081298, -1.8391980042475244, -1.3489040349305794, 1.0805096992037448, -3.487970976067402e-06, -0.05034008313998836], [-0.05043638754447089, -1.8412563374313526, -1.3432054560745406, 1.0727527871638787, -3.487971057799313e-06, -0.05034006067632967], [-0.0504363650808113, -1.8433712506747095, -1.3375675677415824, 1.064999985587568, -3.4879711404045754e-06, -0.05034003821267004], [-0.05043634261715126, -1.8455426602711547, -1.3319902023685999, 1.0572512106181506, -3.487971221985736e-06, -0.05034001574900887], [-0.05043632015349209, -1.8477704828831965, -1.3264732036193274, 1.0495063892568353, -3.4879713052038074e-06, -0.050339993285348904], [-0.050436297689832814, -1.8500546352628173, -1.3210164260404391, 1.0417654592983325, -3.487971386300503e-06, -0.05033997082169228], [-0.05043627522617289, -1.8523950339770292, -1.3156197347277745, 1.0340283692714578, -3.4879714726706826e-06, -0.0503399483580319], [-0.050436252762513616, -1.854791595138389, -1.3102830050022831, 1.0262950783846068, -3.4879715543373582e-06, -0.050339925894371716], [-0.050436230298854856, -1.8572442341402196, -1.305006122094979, 1.0185655564754819, -3.487971632528446e-06, -0.05033990343071283], [-0.050436207835194126, -1.8597528653964903, -1.299788980840472, 1.0108397839647048, -3.4879717164186733e-06, -0.050339880967051484], [-0.05043618537153469, -1.8623174020862097, -1.2946314853786802, 1.0031177518131935, -3.4879718015381526e-06, -0.05033985850339203], [-0.05043616290787549, -1.8649377559022429, -1.2895335488640773, 0.9953994614825636, -3.4879718835429207e-06, -0.05033983603973476], [-0.050436140444215696, -1.8676138368044743, -1.2844950931822312, 0.9876849248984851, -3.487971966534316e-06, -0.05033981357607399], [-0.05043611798055693, -1.8703455527772899, -1.2795160486731625, 0.9799741644166078, -3.487972046044949e-06, -0.05033979111241587], [-0.05043609551689742, -1.8731328095912565, -1.2745963538611018, 0.9722672127905818, -3.48797212838321e-06, -0.0503397686487571], [-0.050436073053237974, -1.8759755105690823, -1.2697359551903726, 0.9645641131420304, -3.4879722131775265e-06, -0.05033974618509572], [-0.05043605058957838, -1.8788735563556884, -1.2649348067669755, 0.9568649189320348, -3.487972294343133e-06, -0.05033972372143683], [-0.05043602812591871, -1.8818268446925674, -1.2601928701056502, 0.949169693933829, -3.48797237682003e-06, -0.05033970125777911], [-0.05043600566225976, -1.8848352701962736, -1.2555101138820313, 0.9414785122065092, -3.487972457857972e-06, -0.05033967879411805], [-0.05043598319859937, -1.8878987241411371, -1.2508865136896263, 0.9337914580692442, -3.487972541198173e-06, -0.050339656330458435], [-0.050435960734940305, -1.8910170942462778, -1.2463220518014553, 0.9261086260759372, -3.4879726234607514e-06, -0.05033963386679842], [-0.05043593827128092, -1.894190264466845, -1.2418167169359244, 0.9184301209898434, -3.4879727053426497e-06, -0.050339611403139084], [-0.05043591580762135, -1.89741811478965, -1.2373705040268785, 0.9107560577579952, -3.487972788024181e-06, -0.05033958893947956], [-0.050435893343961785, -1.9007005210331651, -1.2329834139974816, 0.9030865614850871, -3.4879728715474656e-06, -0.050339566475819685], [-0.05043587088030243, -1.90403735465202, -1.2286554535377965, 0.895421767406552, -3.487972953225749e-06, -0.050339544012160974]]}
+
+=== DESCENT 1/44 ===
+DESCENT 1/44: step=0, max_joint_error=0.00852, tcp=[ 0.0265  -0.01649  1.01137]
+DESCENT 1/44: step=20, max_joint_error=0.00301, tcp=[ 0.02641 -0.01648  1.00959]
+DESCENT 1/44: target reached (max joint error 0.001460)
+
+=== DESCENT 2/44 ===
+DESCENT 2/44: step=0, max_joint_error=0.00925, tcp=[ 0.02647 -0.01648  1.0094 ]
+DESCENT 2/44: step=20, max_joint_error=0.00324, tcp=[ 0.0264  -0.01648  1.00759]
+DESCENT 2/44: target reached (max joint error 0.001487)
+
+=== DESCENT 3/44 ===
+DESCENT 3/44: step=0, max_joint_error=0.00926, tcp=[ 0.02647 -0.01648  1.0074 ]
+DESCENT 3/44: step=20, max_joint_error=0.00324, tcp=[ 0.0264  -0.01648  1.00559]
+DESCENT 3/44: target reached (max joint error 0.001487)
+
+=== DESCENT 4/44 ===
+DESCENT 4/44: step=0, max_joint_error=0.00926, tcp=[ 0.02647 -0.01648  1.0054 ]
+DESCENT 4/44: step=20, max_joint_error=0.00324, tcp=[ 0.0264  -0.01648  1.00359]
+DESCENT 4/44: target reached (max joint error 0.001484)
+
+=== DESCENT 5/44 ===
+DESCENT 5/44: step=0, max_joint_error=0.00925, tcp=[ 0.02647 -0.01648  1.0034 ]
+DESCENT 5/44: step=20, max_joint_error=0.00323, tcp=[ 0.0264  -0.01648  1.00159]
+DESCENT 5/44: target reached (max joint error 0.001481)
+
+=== DESCENT 6/44 ===
+DESCENT 6/44: step=0, max_joint_error=0.00924, tcp=[ 0.02647 -0.01648  1.0014 ]
+DESCENT 6/44: step=20, max_joint_error=0.00322, tcp=[ 0.0264  -0.01648  0.99959]
+DESCENT 6/44: target reached (max joint error 0.001478)
+
+=== DESCENT 7/44 ===
+DESCENT 7/44: step=0, max_joint_error=0.00923, tcp=[ 0.02647 -0.01648  0.9994 ]
+DESCENT 7/44: step=20, max_joint_error=0.00321, tcp=[ 0.0264  -0.01648  0.99759]
+DESCENT 7/44: target reached (max joint error 0.001475)
+
+=== DESCENT 8/44 ===
+DESCENT 8/44: step=0, max_joint_error=0.00922, tcp=[ 0.02647 -0.01648  0.9974 ]
+DESCENT 8/44: step=20, max_joint_error=0.00321, tcp=[ 0.0264  -0.01648  0.99559]
+DESCENT 8/44: target reached (max joint error 0.001472)
+
+=== DESCENT 9/44 ===
+DESCENT 9/44: step=0, max_joint_error=0.00921, tcp=[ 0.02647 -0.01648  0.9954 ]
+DESCENT 9/44: step=20, max_joint_error=0.00320, tcp=[ 0.0264  -0.01648  0.99359]
+DESCENT 9/44: target reached (max joint error 0.001469)
+
+=== DESCENT 10/44 ===
+DESCENT 10/44: step=0, max_joint_error=0.00920, tcp=[ 0.02647 -0.01648  0.9934 ]
+DESCENT 10/44: step=20, max_joint_error=0.00319, tcp=[ 0.0264  -0.01648  0.99159]
+DESCENT 10/44: target reached (max joint error 0.001466)
+
+=== DESCENT 11/44 ===
+DESCENT 11/44: step=0, max_joint_error=0.00919, tcp=[ 0.02647 -0.01648  0.9914 ]
+DESCENT 11/44: step=20, max_joint_error=0.00318, tcp=[ 0.0264  -0.01648  0.98959]
+DESCENT 11/44: target reached (max joint error 0.001463)
+
+=== DESCENT 12/44 ===
+DESCENT 12/44: step=0, max_joint_error=0.00918, tcp=[ 0.02647 -0.01648  0.9894 ]
+DESCENT 12/44: step=20, max_joint_error=0.00318, tcp=[ 0.0264  -0.01648  0.98759]
+DESCENT 12/44: target reached (max joint error 0.001461)
+
+=== DESCENT 13/44 ===
+DESCENT 13/44: step=0, max_joint_error=0.00918, tcp=[ 0.02647 -0.01648  0.9874 ]
+DESCENT 13/44: step=20, max_joint_error=0.00317, tcp=[ 0.0264  -0.01648  0.98559]
+DESCENT 13/44: target reached (max joint error 0.001458)
+
+=== DESCENT 14/44 ===
+DESCENT 14/44: step=0, max_joint_error=0.00917, tcp=[ 0.02647 -0.01648  0.9854 ]
+DESCENT 14/44: step=20, max_joint_error=0.00316, tcp=[ 0.0264  -0.01648  0.98359]
+DESCENT 14/44: target reached (max joint error 0.001456)
+
+=== DESCENT 15/44 ===
+DESCENT 15/44: step=0, max_joint_error=0.00916, tcp=[ 0.02647 -0.01648  0.9834 ]
+DESCENT 15/44: step=20, max_joint_error=0.00316, tcp=[ 0.0264  -0.01648  0.98159]
+DESCENT 15/44: target reached (max joint error 0.001454)
+
+=== DESCENT 16/44 ===
+DESCENT 16/44: step=0, max_joint_error=0.00915, tcp=[ 0.02647 -0.01648  0.9814 ]
+DESCENT 16/44: step=20, max_joint_error=0.00315, tcp=[ 0.0264  -0.01648  0.97959]
+DESCENT 16/44: target reached (max joint error 0.001452)
+
+=== DESCENT 17/44 ===
+DESCENT 17/44: step=0, max_joint_error=0.00915, tcp=[ 0.02647 -0.01648  0.9794 ]
+DESCENT 17/44: step=20, max_joint_error=0.00315, tcp=[ 0.0264  -0.01648  0.97759]
+DESCENT 17/44: target reached (max joint error 0.001450)
+
+=== DESCENT 18/44 ===
+DESCENT 18/44: step=0, max_joint_error=0.00914, tcp=[ 0.02647 -0.01648  0.9774 ]
+DESCENT 18/44: step=20, max_joint_error=0.00314, tcp=[ 0.0264  -0.01648  0.97559]
+DESCENT 18/44: target reached (max joint error 0.001448)
+
+=== DESCENT 19/44 ===
+DESCENT 19/44: step=0, max_joint_error=0.00914, tcp=[ 0.02647 -0.01648  0.9754 ]
+DESCENT 19/44: step=20, max_joint_error=0.00314, tcp=[ 0.0264  -0.01648  0.97359]
+DESCENT 19/44: target reached (max joint error 0.001446)
+
+=== DESCENT 20/44 ===
+DESCENT 20/44: step=0, max_joint_error=0.00913, tcp=[ 0.02647 -0.01648  0.9734 ]
+DESCENT 20/44: step=20, max_joint_error=0.00313, tcp=[ 0.0264  -0.01648  0.97159]
+DESCENT 20/44: target reached (max joint error 0.001445)
+
+=== DESCENT 21/44 ===
+DESCENT 21/44: step=0, max_joint_error=0.00912, tcp=[ 0.02647 -0.01648  0.97139]
+DESCENT 21/44: step=20, max_joint_error=0.00313, tcp=[ 0.0264  -0.01648  0.96959]
+DESCENT 21/44: target reached (max joint error 0.001443)
+
+=== DESCENT 22/44 ===
+DESCENT 22/44: step=0, max_joint_error=0.00912, tcp=[ 0.02647 -0.01648  0.96939]
+DESCENT 22/44: step=20, max_joint_error=0.00312, tcp=[ 0.0264  -0.01648  0.96759]
+DESCENT 22/44: target reached (max joint error 0.001441)
+
+=== DESCENT 23/44 ===
+DESCENT 23/44: step=0, max_joint_error=0.00911, tcp=[ 0.02647 -0.01648  0.96739]
+DESCENT 23/44: step=20, max_joint_error=0.00312, tcp=[ 0.0264  -0.01648  0.96558]
+DESCENT 23/44: target reached (max joint error 0.001440)
+
+=== DESCENT 24/44 ===
+DESCENT 24/44: step=0, max_joint_error=0.00911, tcp=[ 0.02647 -0.01648  0.96539]
+DESCENT 24/44: step=20, max_joint_error=0.00311, tcp=[ 0.0264  -0.01648  0.96358]
+DESCENT 24/44: target reached (max joint error 0.001439)
+
+=== DESCENT 25/44 ===
+DESCENT 25/44: step=0, max_joint_error=0.00910, tcp=[ 0.02647 -0.01648  0.96339]
+DESCENT 25/44: step=20, max_joint_error=0.00311, tcp=[ 0.0264  -0.01648  0.96158]
+DESCENT 25/44: target reached (max joint error 0.001519)
+
+=== DESCENT 26/44 ===
+DESCENT 26/44: step=0, max_joint_error=0.00917, tcp=[ 0.02647 -0.01648  0.9614 ]
+DESCENT 26/44: step=20, max_joint_error=0.00313, tcp=[ 0.0264  -0.01648  0.95958]
+DESCENT 26/44: target reached (max joint error 0.001448)
+
+=== DESCENT 27/44 ===
+DESCENT 27/44: step=0, max_joint_error=0.00910, tcp=[ 0.02647 -0.01648  0.95939]
+DESCENT 27/44: step=20, max_joint_error=0.00310, tcp=[ 0.0264  -0.01648  0.95758]
+DESCENT 27/44: target reached (max joint error 0.001518)
+
+=== DESCENT 28/44 ===
+DESCENT 28/44: step=0, max_joint_error=0.00917, tcp=[ 0.02647 -0.01648  0.9574 ]
+DESCENT 28/44: step=20, max_joint_error=0.00312, tcp=[ 0.0264  -0.01648  0.95558]
+DESCENT 28/44: target reached (max joint error 0.001446)
+
+=== DESCENT 29/44 ===
+DESCENT 29/44: step=0, max_joint_error=0.00909, tcp=[ 0.02647 -0.01648  0.95539]
+DESCENT 29/44: step=20, max_joint_error=0.00309, tcp=[ 0.0264  -0.01648  0.95358]
+DESCENT 29/44: target reached (max joint error 0.001516)
+
+=== DESCENT 30/44 ===
+DESCENT 30/44: step=0, max_joint_error=0.00916, tcp=[ 0.02647 -0.01648  0.9534 ]
+DESCENT 30/44: step=20, max_joint_error=0.00311, tcp=[ 0.0264  -0.01648  0.95158]
+DESCENT 30/44: target reached (max joint error 0.001444)
+
+=== DESCENT 31/44 ===
+DESCENT 31/44: step=0, max_joint_error=0.00909, tcp=[ 0.02647 -0.01648  0.95139]
+DESCENT 31/44: step=20, max_joint_error=0.00309, tcp=[ 0.0264  -0.01648  0.94958]
+DESCENT 31/44: target reached (max joint error 0.001514)
+
+=== DESCENT 32/44 ===
+DESCENT 32/44: step=0, max_joint_error=0.00915, tcp=[ 0.02647 -0.01648  0.9494 ]
+DESCENT 32/44: step=20, max_joint_error=0.00310, tcp=[ 0.0264  -0.01648  0.94758]
+DESCENT 32/44: target reached (max joint error 0.001443)
+
+=== DESCENT 33/44 ===
+DESCENT 33/44: step=0, max_joint_error=0.00908, tcp=[ 0.02647 -0.01648  0.94739]
+DESCENT 33/44: step=20, max_joint_error=0.00308, tcp=[ 0.0264  -0.01648  0.94558]
+DESCENT 33/44: target reached (max joint error 0.001512)
+
+=== DESCENT 34/44 ===
+DESCENT 34/44: step=0, max_joint_error=0.00914, tcp=[ 0.02647 -0.01648  0.9454 ]
+DESCENT 34/44: step=20, max_joint_error=0.00310, tcp=[ 0.0264  -0.01648  0.94358]
+DESCENT 34/44: target reached (max joint error 0.001522)
+
+=== DESCENT 35/44 ===
+DESCENT 35/44: step=0, max_joint_error=0.00914, tcp=[ 0.02647 -0.01648  0.9434 ]
+DESCENT 35/44: step=20, max_joint_error=0.00310, tcp=[ 0.0264  -0.01648  0.94158]
+DESCENT 35/44: target reached (max joint error 0.001523)
+
+=== DESCENT 36/44 ===
+DESCENT 36/44: step=0, max_joint_error=0.00914, tcp=[ 0.02647 -0.01648  0.9414 ]
+DESCENT 36/44: step=20, max_joint_error=0.00309, tcp=[ 0.0264  -0.01648  0.93958]
+DESCENT 36/44: target reached (max joint error 0.001523)
+
+=== DESCENT 37/44 ===
+DESCENT 37/44: step=0, max_joint_error=0.00914, tcp=[ 0.02647 -0.01648  0.9394 ]
+DESCENT 37/44: step=20, max_joint_error=0.00309, tcp=[ 0.0264  -0.01648  0.93758]
+DESCENT 37/44: target reached (max joint error 0.001522)
+
+=== DESCENT 38/44 ===
+DESCENT 38/44: step=0, max_joint_error=0.00913, tcp=[ 0.02647 -0.01648  0.9374 ]
+DESCENT 38/44: step=20, max_joint_error=0.00309, tcp=[ 0.0264  -0.01648  0.93558]
+DESCENT 38/44: target reached (max joint error 0.001521)
+
+=== DESCENT 39/44 ===
+DESCENT 39/44: step=0, max_joint_error=0.00913, tcp=[ 0.02647 -0.01648  0.9354 ]
+DESCENT 39/44: step=20, max_joint_error=0.00308, tcp=[ 0.0264  -0.01648  0.93358]
+DESCENT 39/44: target reached (max joint error 0.001521)
+
+=== DESCENT 40/44 ===
+DESCENT 40/44: step=0, max_joint_error=0.00912, tcp=[ 0.02647 -0.01648  0.9334 ]
+DESCENT 40/44: step=20, max_joint_error=0.00308, tcp=[ 0.0264  -0.01648  0.93158]
+DESCENT 40/44: target reached (max joint error 0.001520)
+
+=== DESCENT 41/44 ===
+DESCENT 41/44: step=0, max_joint_error=0.00912, tcp=[ 0.02647 -0.01648  0.9314 ]
+DESCENT 41/44: step=20, max_joint_error=0.00308, tcp=[ 0.0264  -0.01648  0.92958]
+DESCENT 41/44: target reached (max joint error 0.001520)
+
+=== DESCENT 42/44 ===
+DESCENT 42/44: step=0, max_joint_error=0.00911, tcp=[ 0.02647 -0.01648  0.9294 ]
+DESCENT 42/44: step=20, max_joint_error=0.00307, tcp=[ 0.0264  -0.01648  0.92758]
+DESCENT 42/44: target reached (max joint error 0.001519)
+
+=== DESCENT 43/44 ===
+DESCENT 43/44: step=0, max_joint_error=0.00911, tcp=[ 0.02647 -0.01648  0.9274 ]
+DESCENT 43/44: step=20, max_joint_error=0.00307, tcp=[ 0.0264  -0.01648  0.92558]
+DESCENT 43/44: target reached (max joint error 0.001519)
+
+=== DESCENT 44/44 ===
+DESCENT 44/44: step=0, max_joint_error=0.00910, tcp=[ 0.02647 -0.01648  0.9254 ]
+DESCENT 44/44: step=20, max_joint_error=0.00307, tcp=[ 0.0264  -0.01648  0.92358]
+DESCENT 44/44: target reached (max joint error 0.001518)
+actual legacy TCP xyz: [ 0.02651396 -0.01648625  0.92346814]
+physical grasp target xyz: [ 0.02654114 -0.01648757  0.83344362]
+actual physical grasp xyz: [ 0.02647239 -0.01648432  0.83346815]
+grasp position error: 7.307170110034283e-05
+DESCENT FINAL {"time_s": 116.1499999999107, "phase": "DESCENT FINAL OPEN HOLD", "tcp_xyz": [0.026537959096773586, -0.016487422632471726, 0.9234464978643304], "physical_grasp_xyz": [0.026533068033068954, -0.016487213241917213, 0.8334464979974768], "cube_xyz": [0.026541141414711606, -0.016487568600564488, 0.8214436159602736], "cube_delta_xyz_m": [0.0, 0.0, 0.0], "cube_rotation_change_deg": 0.0, "orientation_error_deg": 0.00311659995069881, "gripper_table_clearance_m": 0.018446373975489226, "left_finger_front_xyz": [0.026539841763798065, 0.0394996388848541, 0.8385617889731809], "right_finger_front_xyz": [0.026526893587165375, -0.07247425859784974, 0.8385616650611937], "palm_geom_xyz": [0.026540488196488334, -0.016486441762053303, 0.9091133937074449], "desired_physical_grasp_xyz": [0.026541141414711606, -0.016487568600564488, 0.8334436159602736], "physical_grasp_error_m": 8.57973830351873e-06, "local_positive_x_world": [-5.434515227370019e-05, 2.3265617168294637e-06, -0.9999999985205954], "minimum_joint_limit_margin_rad": 0.6745062409135578, "finger_qpos": [0.049999999935952125, -0.0500000000000816], "physics_samples": 58075, "model_timestep_s": 0.002, "maximum_cube_motion": {"xy_m": 0.0, "z_m": 0.0, "rotation_deg": 0.0}, "minimum_gripper_table_clearance_m": 0.018446379858739113, "maximum_orientation_error_deg": 0.42494697143114313, "contact_history": {"left_finger_cube": [], "right_finger_cube": [], "palm_cube": [], "gripper_table": [], "arm_table": [], "cube_table": [{"geoms": ["cube_g0", "table_collision"], "first_time_s": 0.04600000000000003, "first_phase": "SETTLE", "first_physical_grasp_xyz": [0.009999999999999792, -1.1864090722315462e-16, 0.9500000000000003], "first_cube_xyz": [0.026541141414711606, -0.016487568600564488, 0.8207216463908978], "first_distance_m": -0.000829724989592568, "first_force_N": 4.684101352734522, "max_force_N": 4.684101352734522, "minimum_distance_m": -0.0032364371033337842, "samples": 58052, "last_time_s": 116.14799999991071}], "other_robot": []}, "plan": {"waypoint_count": 44, "cartesian_step_m": 0.001999999999999999, "maximum_adjacent_delta_q_rad": 0.007874323057420751, "physical_grasp_target_xyz": [0.026541141414711606, -0.016487568600564488, 0.8334436159602736], "waypoint_q": [[-0.05043683681766153, -1.8109641154731184, -1.469026494492824, 1.2288660475403494, -3.487969407011201e-06, -0.05034050994951717], [-0.05043681435399938, -1.8119287841309866, -1.4621250726287547, 1.2209999570184173, -3.4879694911354883e-06, -0.050340487485857635], [-0.05043679189034187, -1.8129521109365192, -1.4552902146778146, 1.2131417722619455, -3.4879695796009963e-06, -0.05034046502219561], [-0.050436769426683646, -1.8140339432955308, -1.4485214552884096, 1.2052911805135311, -3.487969650373099e-06, -0.050340442558542045], [-0.05043674696302083, -1.8151741356622606, -1.4418183498862098, 1.197447882744606, -3.4879697422934995e-06, -0.050340420094875916], [-0.05043672449936259, -1.816372549096347, -1.4351804739655718, 1.1896115933898845, -3.4879698205629852e-06, -0.05034039763121981], [-0.05043670203570169, -1.8176290508335, -1.42860742241189, 1.1817820400990529, -3.4879699057359512e-06, -0.05034037516756136], [-0.05043667957204418, -1.8189435138693009, -1.422098808853414, 1.173958963504769, -3.487969986614966e-06, -0.050340352703901275], [-0.05043665710838425, -1.8203158165551694, -1.4156542650405168, 1.1661421170060144, -3.4879700700629197e-06, -0.05034033024024242], [-0.05043663464472372, -1.8217458422058042, -1.4092734402509344, 1.1583312665658005, -3.48797015040953e-06, -0.050340307776582466], [-0.05043661218106532, -1.8232334787175575, -1.402956000719548, 1.1505261905226574, -3.487970233311037e-06, -0.0503402853129248], [-0.05043658971740643, -1.8247786181968593, -1.3967016290910872, 1.1427266794149016, -3.487970316982505e-06, -0.050340262849263184], [-0.05043656725374554, -1.8263811565982253, -1.3905100238945107, 1.1349325358169617, -3.487970403481259e-06, -0.050340240385603884], [-0.05043654479008696, -1.8280409933713442, -1.3843808990379565, 1.12714357418729, -3.4879704842775854e-06, -0.050340217921943584], [-0.05043652232642724, -1.829758031116711, -1.3783139833228526, 1.1193596207268193, -3.4879705670677855e-06, -0.05034019545828349], [-0.05043649986276722, -1.831532175249239, -1.372309019976257, 1.1115805132477006, -3.4879706488930943e-06, -0.05034017299462575], [-0.05043647739910935, -1.8333633336696102, -1.366365766200377, 1.1038061010514557, -3.487970729645057e-06, -0.05034015053096557], [-0.0504364549354494, -1.8352514164427716, -1.3604839927381802, 1.0960362448161027, -3.4879708110186546e-06, -0.05034012806730485], [-0.05043643247178949, -1.8371963354833236, -1.3546634834543418, 1.0882708164917108, -3.4879708937163443e-06, -0.05034010560364882], [-0.0504364100081298, -1.8391980042475244, -1.3489040349305794, 1.0805096992037448, -3.487970976067402e-06, -0.05034008313998836], [-0.05043638754447089, -1.8412563374313526, -1.3432054560745406, 1.0727527871638787, -3.487971057799313e-06, -0.05034006067632967], [-0.0504363650808113, -1.8433712506747095, -1.3375675677415824, 1.064999985587568, -3.4879711404045754e-06, -0.05034003821267004], [-0.05043634261715126, -1.8455426602711547, -1.3319902023685999, 1.0572512106181506, -3.487971221985736e-06, -0.05034001574900887], [-0.05043632015349209, -1.8477704828831965, -1.3264732036193274, 1.0495063892568353, -3.4879713052038074e-06, -0.050339993285348904], [-0.050436297689832814, -1.8500546352628173, -1.3210164260404391, 1.0417654592983325, -3.487971386300503e-06, -0.05033997082169228], [-0.05043627522617289, -1.8523950339770292, -1.3156197347277745, 1.0340283692714578, -3.4879714726706826e-06, -0.0503399483580319], [-0.050436252762513616, -1.854791595138389, -1.3102830050022831, 1.0262950783846068, -3.4879715543373582e-06, -0.050339925894371716], [-0.050436230298854856, -1.8572442341402196, -1.305006122094979, 1.0185655564754819, -3.487971632528446e-06, -0.05033990343071283], [-0.050436207835194126, -1.8597528653964903, -1.299788980840472, 1.0108397839647048, -3.4879717164186733e-06, -0.050339880967051484], [-0.05043618537153469, -1.8623174020862097, -1.2946314853786802, 1.0031177518131935, -3.4879718015381526e-06, -0.05033985850339203], [-0.05043616290787549, -1.8649377559022429, -1.2895335488640773, 0.9953994614825636, -3.4879718835429207e-06, -0.05033983603973476], [-0.050436140444215696, -1.8676138368044743, -1.2844950931822312, 0.9876849248984851, -3.487971966534316e-06, -0.05033981357607399], [-0.05043611798055693, -1.8703455527772899, -1.2795160486731625, 0.9799741644166078, -3.487972046044949e-06, -0.05033979111241587], [-0.05043609551689742, -1.8731328095912565, -1.2745963538611018, 0.9722672127905818, -3.48797212838321e-06, -0.0503397686487571], [-0.050436073053237974, -1.8759755105690823, -1.2697359551903726, 0.9645641131420304, -3.4879722131775265e-06, -0.05033974618509572], [-0.05043605058957838, -1.8788735563556884, -1.2649348067669755, 0.9568649189320348, -3.487972294343133e-06, -0.05033972372143683], [-0.05043602812591871, -1.8818268446925674, -1.2601928701056502, 0.949169693933829, -3.48797237682003e-06, -0.05033970125777911], [-0.05043600566225976, -1.8848352701962736, -1.2555101138820313, 0.9414785122065092, -3.487972457857972e-06, -0.05033967879411805], [-0.05043598319859937, -1.8878987241411371, -1.2508865136896263, 0.9337914580692442, -3.487972541198173e-06, -0.050339656330458435], [-0.050435960734940305, -1.8910170942462778, -1.2463220518014553, 0.9261086260759372, -3.4879726234607514e-06, -0.05033963386679842], [-0.05043593827128092, -1.894190264466845, -1.2418167169359244, 0.9184301209898434, -3.4879727053426497e-06, -0.050339611403139084], [-0.05043591580762135, -1.89741811478965, -1.2373705040268785, 0.9107560577579952, -3.487972788024181e-06, -0.05033958893947956], [-0.050435893343961785, -1.9007005210331651, -1.2329834139974816, 0.9030865614850871, -3.4879728715474656e-06, -0.050339566475819685], [-0.05043587088030243, -1.90403735465202, -1.2286554535377965, 0.895421767406552, -3.487972953225749e-06, -0.050339544012160974]]}, "failure": null}
+DESCENT-ONLY COMPLETE: gripper OPEN; no closing or lifting.
+Xlib:  extension "NV-GLX" missing on display ":1".

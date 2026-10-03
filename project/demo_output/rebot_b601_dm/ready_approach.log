@@ -1,0 +1,142 @@
+[robosuite WARNING] No private macro file found! (macros.py:57)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:58)
+[robosuite WARNING] To setup, run: python /home/qwer1234/Capstone/rebot_autofocus_ws/third_party/robosuite/robosuite/scripts/setup_macros.py (macros.py:59)
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly (e.g. pip install mink==0.0.5), otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)
+[robosuite INFO] Loading controller configuration from: /home/qwer1234/Capstone/rebot_autofocus_ws/project/configs/rebot_b601_dm_joint_position.json (composite_controller_factory.py:121)
+READY VALIDATION {"minimum_joint_margin_rad": 0.23351559120083132, "moving_arm_table_clearance_m": 0.08464999912951301, "gripper_table_clearance_m": 0.13500000238002877, "physical_grasp_xyz": [0.01, 0.0, 0.95], "tcp_target_xyz": [0.00999999999999998, 0.0, 1.04], "q": [-1.6370309160015684e-06, -1.738218917468406, -1.5038996530709692, 1.3364844087991687, -3.6731461223593066e-06, 9.4689836188883e-05], "robot_contacts": []}
+
+=== SETTLE ===
+
+=== OPEN GRIPPER ===
+cube world xyz: [ 0.02654114 -0.01648757  0.82144362]
+tcp  world xyz: [ 1.00000000e-02 -6.69900633e-11  1.04000000e+00]
+pregrasp physical grasp xyz: [ 0.02654114 -0.01648757  0.92144362]
+alignment physical grasp xyz: [ 0.02654114 -0.01648757  0.83344362]
+lift physical grasp xyz: [ 0.02654114 -0.01648757  0.95344362]
+APPROACH PLAN {"minimum_joint_margin_rad": 0.21969806028684635, "moving_arm_table_clearance_m": 0.08464999912951301, "gripper_table_clearance_m": 0.10644361834030205, "waypoint_count": 11, "max_adjacent_delta_q_rad": 0.019101080832642614, "checked_configurations": 103, "robot_contacts": []}
+APPROACH WAYPOINTS [{"phase": "ABOVE_CUBE", "physical_grasp_target": [0.013308228282942322, -0.003297513720112898, 0.95], "tcp_target": [0.013308228282942302, -0.003297513720112898, 1.04], "q": [-0.010523205609207038, -1.7509769129063617, -1.5190013402207938, 1.3388281003066178, -3.634499680464068e-06, -0.01042687874188839]}, {"phase": "ABOVE_CUBE", "physical_grasp_target": [0.016616456565884643, -0.006595027440225796, 0.95], "tcp_target": [0.016616456565884622, -0.006595027440225796, 1.04], "q": [-0.02082271876356972, -1.7638989354863723, -1.5344705082910906, 1.3413752452029777, -3.5966729907501077e-06, -0.02072639189604065]}, {"phase": "ABOVE_CUBE", "physical_grasp_target": [0.019924684848826965, -0.009892541160338695, 0.95], "tcp_target": [0.019924684848826944, -0.009892541160338695, 1.04], "q": [-0.030905015526802596, -1.7769856680620717, -1.5503141985282602, 1.3441322019057254, -3.559651906548874e-06, -0.030808688659066143]}, {"phase": "ABOVE_CUBE", "physical_grasp_target": [0.023232913131769287, -0.013190054880451592, 0.95], "tcp_target": [0.023232913131769267, -0.013190054880451592, 1.04], "q": [-0.04077490970372764, -1.7902383048107562, -1.5665401465154767, 1.3471055118442392, -3.5234219023929293e-06, -0.04067858283578685]}, {"phase": "ABOVE_CUBE", "physical_grasp_target": [0.02654114141471161, -0.016487568600564488, 0.95], "tcp_target": [0.02654114141471159, -0.016487568600564488, 1.04], "q": [-0.05043718002176343, -1.8036585776501484, -1.5831568488427707, 1.3503019397131537, -3.4879681509147598e-06, -0.05034085315362142]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.9452406026600455], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.0352406026600456], "q": [-0.05043712656502289, -1.8038624995452384, -1.5642596899052077, 1.331200858880511, -3.48796834720978e-06, -0.05034079969688085]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.9404812053200912], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.0304812053200911], "q": [-0.05043707310828231, -1.8044163896451926, -1.5457910894540765, 1.3121783683294355, -3.487968542957103e-06, -0.050340746240140344]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.9357218079801368], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.025721807980137], "q": [-0.05043701965154157, -1.8053162520519501, -1.5277399087309724, 1.2932273251995838, -3.4879687394374333e-06, -0.05034069278339977]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.9309624106401824], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.0209624106401824], "q": [-0.05043696619480108, -1.8065585487220746, -1.5100960785895527, 1.2743411983880497, -3.487968935326234e-06, -0.05034063932665902]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.926203013300228], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.016203013300228], "q": [-0.05043691273806058, -1.8081401457562647, -1.4928505018269398, 1.2555140245912566, -3.4879691314842854e-06, -0.05034058586991873]}, {"phase": "PREGRASP", "physical_grasp_target": [0.026541141414711606, -0.016487568600564488, 0.9214436159602736], "tcp_target": [0.026541141414711585, -0.016487568600564488, 1.0114436159602735], "q": [-0.05043685928131999, -1.8100582650635826, -1.475994967140761, 1.2367403705977702, -3.4879693277147545e-06, -0.050340532413178]}]
+
+=== ABOVE_CUBE 1/11 ===
+ABOVE_CUBE 1/11: step=0, max_joint_error=0.01510, tcp=[ 1.01800e-02 -1.80000e-04  1.03999e+00]
+ABOVE_CUBE 1/11: step=20, max_joint_error=0.00544, tcp=[ 0.01331 -0.00325  1.03985]
+ABOVE_CUBE 1/11: step=40, max_joint_error=0.00279, tcp=[ 0.01335 -0.0033   1.03996]
+ABOVE_CUBE 1/11: target reached (max joint error 0.001689)
+
+=== ABOVE_CUBE 2/11 ===
+ABOVE_CUBE 2/11: step=0, max_joint_error=0.01567, tcp=[ 0.01351 -0.00348  1.03997]
+ABOVE_CUBE 2/11: step=20, max_joint_error=0.00617, tcp=[ 0.01662 -0.00655  1.03983]
+ABOVE_CUBE 2/11: step=40, max_joint_error=0.00316, tcp=[ 0.01666 -0.0066   1.03995]
+ABOVE_CUBE 2/11: target reached (max joint error 0.001674)
+
+=== ABOVE_CUBE 3/11 ===
+ABOVE_CUBE 3/11: step=0, max_joint_error=0.01602, tcp=[ 0.01681 -0.00678  1.03997]
+ABOVE_CUBE 3/11: step=20, max_joint_error=0.00605, tcp=[ 0.01993 -0.00985  1.03983]
+ABOVE_CUBE 3/11: step=40, max_joint_error=0.00310, tcp=[ 0.01997 -0.0099   1.03995]
+ABOVE_CUBE 3/11: target reached (max joint error 0.001641)
+
+=== ABOVE_CUBE 4/11 ===
+ABOVE_CUBE 4/11: step=0, max_joint_error=0.01641, tcp=[ 0.02012 -0.01007  1.03997]
+ABOVE_CUBE 4/11: step=20, max_joint_error=0.00592, tcp=[ 0.02324 -0.01315  1.03983]
+ABOVE_CUBE 4/11: step=40, max_joint_error=0.00303, tcp=[ 0.02328 -0.0132   1.03995]
+ABOVE_CUBE 4/11: target reached (max joint error 0.001661)
+
+=== ABOVE_CUBE 5/11 ===
+ABOVE_CUBE 5/11: step=0, max_joint_error=0.01682, tcp=[ 0.02343 -0.01337  1.03997]
+ABOVE_CUBE 5/11: step=20, max_joint_error=0.00582, tcp=[ 0.02656 -0.01645  1.03982]
+ABOVE_CUBE 5/11: step=40, max_joint_error=0.00298, tcp=[ 0.02659 -0.01649  1.03995]
+ABOVE_CUBE 5/11: target reached (max joint error 0.001689)
+
+=== PREGRASP 6/11 ===
+PREGRASP 6/11: step=0, max_joint_error=0.01867, tcp=[ 0.02655 -0.01649  1.03974]
+PREGRASP 6/11: step=20, max_joint_error=0.00684, tcp=[ 0.02625 -0.01647  1.03557]
+PREGRASP 6/11: step=40, max_joint_error=0.00224, tcp=[ 0.02643 -0.01648  1.03533]
+PREGRASP 6/11: target reached (max joint error 0.001427)
+
+=== PREGRASP 7/11 ===
+PREGRASP 7/11: step=0, max_joint_error=0.02037, tcp=[ 0.02646 -0.01648  1.03505]
+PREGRASP 7/11: step=20, max_joint_error=0.00736, tcp=[ 0.02623 -0.01647  1.03083]
+PREGRASP 7/11: step=40, max_joint_error=0.00241, tcp=[ 0.02643 -0.01648  1.03058]
+PREGRASP 7/11: target reached (max joint error 0.001449)
+
+=== PREGRASP 8/11 ===
+PREGRASP 8/11: step=0, max_joint_error=0.02032, tcp=[ 0.02646 -0.01648  1.03029]
+PREGRASP 8/11: step=20, max_joint_error=0.00730, tcp=[ 0.02623 -0.01647  1.02607]
+PREGRASP 8/11: step=40, max_joint_error=0.00239, tcp=[ 0.02643 -0.01648  1.02582]
+PREGRASP 8/11: target reached (max joint error 0.001439)
+
+=== PREGRASP 9/11 ===
+PREGRASP 9/11: step=0, max_joint_error=0.02025, tcp=[ 0.02646 -0.01648  1.02553]
+PREGRASP 9/11: step=20, max_joint_error=0.00724, tcp=[ 0.02623 -0.01647  1.02131]
+PREGRASP 9/11: step=40, max_joint_error=0.00237, tcp=[ 0.02643 -0.01648  1.02106]
+PREGRASP 9/11: target reached (max joint error 0.001429)
+
+=== PREGRASP 10/11 ===
+PREGRASP 10/11: step=0, max_joint_error=0.02018, tcp=[ 0.02646 -0.01648  1.02077]
+PREGRASP 10/11: step=20, max_joint_error=0.00719, tcp=[ 0.02623 -0.01647  1.01654]
+PREGRASP 10/11: step=40, max_joint_error=0.00235, tcp=[ 0.02643 -0.01648  1.0163 ]
+PREGRASP 10/11: target reached (max joint error 0.001501)
+
+=== PREGRASP 11/11 ===
+PREGRASP 11/11: step=0, max_joint_error=0.02019, tcp=[ 0.02646 -0.01648  1.01602]
+PREGRASP 11/11: step=20, max_joint_error=0.00716, tcp=[ 0.02623 -0.01647  1.01178]
+PREGRASP 11/11: step=40, max_joint_error=0.00235, tcp=[ 0.02643 -0.01648  1.01154]
+PREGRASP 11/11: target reached (max joint error 0.001497)
+
+PREGRASP SNAPSHOT {"base_pos": [-0.30000000000000004, 0.0, 0.8], "base_quat_wxyz": [1.0, 0.0, 0.0, 0.0], "tcp_pos": [0.026508534172573983, -0.01648599891637662, 1.0114714672478136], "tcp_quat_wxyz": [0.7069308985304962, 7.828222813018807e-06, 0.7072826200173911, 7.93212730416261e-06], "cube_pos": [0.026541141414711606, -0.016487568600564488, 0.8214436159602736], "cube_quat_wxyz": [1.0, 0.0, 0.0, 0.0], "tcp_to_cube_m": 0.19002785409159245, "arm_qpos": [-0.05043641814195096, -1.81021834533597, -1.4763030664266712, 1.23738517286674, -6.753460264913684e-07, -0.05034023887367888], "arm_qvel": [-3.8226332681139703e-07, 0.00018030413059423974, 0.0003468370559832514, -0.0007251347409047306, -2.0813125957664136e-06, -1.5712194273277386e-07], "finger_qpos": [0.04999999938737517, -0.05000000000218692], "ctrl": [-3.019408131181738e-07, 7.8283108003725115, -5.744544091564254, -0.2336143248894133, -0.0003105986839538811, -2.852397036005878e-07, 0.05], "arm_table_clearance": {"robot0_base_link_collision": {"lowest_above_table_m": -1.8571122209487534e-09, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link1_collision": {"lowest_above_table_m": 0.08464999912951301, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link2_collision": {"lowest_above_table_m": 0.11170115571331854, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link3_collision": {"lowest_above_table_m": 0.33967606974082165, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link4_collision": {"lowest_above_table_m": 0.2503802205466519, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link5_collision": {"lowest_above_table_m": 0.2576580047198893, "overlaps_table_xy": true, "below_tabletop": false}, "robot0_link6_collision": {"lowest_above_table_m": 0.20866840851414328, "overlaps_table_xy": true, "below_tabletop": false}}, "table_contacts": [{"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}, {"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}, {"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}, {"geoms": ["table_collision", "cube_g0"], "distance_m": -0.00010775542021681031, "normal_force_N": 0.19583135002718968}], "robot_contacts": [], "stock_lift_success": false}
+PREGRASP GEOMETRY {"cube_xyz": [0.026541141414711606, -0.016487568600564488, 0.8214436159602736], "physical_grasp_target_xyz": [0.026541141414711606, -0.016487568600564488, 0.9214436159602736], "converted_legacy_tcp_target_xyz": [0.026541141414711585, -0.016487568600564488, 1.0114436159602735], "actual_legacy_tcp_xyz": [0.026508534172573983, -0.01648599891637662, 1.0114714672478136], "actual_physical_grasp_xyz": [0.02646376733708883, -0.01648399295464836, 0.921471478403889], "physical_grasp_error_m": 8.231554467969364e-05, "orientation_error_deg": 0.028528052083748142, "tcp_to_grasp_world_offset": [-4.4766835485151967e-05, 2.0059617282591256e-06, -0.0899999888439246], "local_positive_x_world": [-0.0004974092831683552, 2.228846364732362e-05, -0.9999998760436066], "robot_contacts_seen": []}
+
+=== GRIPPER FRAME DEBUG ===
+CUBE: [ 0.026541 -0.016488  0.821444]
+CONTROLLED TCP: [ 0.026509 -0.016486  1.011471]
+TCP local +X in world: [-4.97e-04  2.20e-05 -1.00e+00]
+TCP local -X in world: [ 4.97e-04 -2.20e-05  1.00e+00]
+TCP local +Y in world: [-0.0e+00  1.0e+00  2.2e-05]
+TCP local +Z in world: [ 1.00e+00  0.00e+00 -4.97e-04]
+
+--- SITES ---
+SITE gripper0_right_tcp [ 0.026509 -0.016486  1.011471]
+SITE gripper0_right_ft_frame [ 0.026456 -0.016484  0.906471]
+SITE gripper0_right_grip_site [ 0.026509 -0.016486  1.011471]
+SITE gripper0_right_ee [ 0.026509 -0.016486  1.011471]
+SITE gripper0_right_grip_site_cylinder [ 0.026509 -0.016486  1.011471]
+SITE gripper0_right_ee_x [ 0.026496 -0.016485  0.986471]
+SITE gripper0_right_ee_y [0.026509 0.008514 1.011472]
+SITE gripper0_right_ee_z [ 0.051509 -0.016486  1.011459]
+
+--- BODIES ---
+BODY left_eef_target [ 0.  0. -1.]
+BODY right_eef_target [ 0.  0. -1.]
+BODY robot0_right_hand [ 0.026456 -0.016484  0.906471]
+BODY gripper0_right_end_link [ 0.026456 -0.016484  0.906471]
+BODY gripper0_right_finger_left_link [0.026456 0.033516 0.906473]
+BODY gripper0_right_finger_right_link [ 0.026456 -0.066484  0.90647 ]
+BODY gripper0_right_eef [ 0.026509 -0.016486  1.011471]
+
+--- GRIPPER GEOMS ---
+GEOM gripper0_right_gripper_palm_collision [ 0.026505 -0.016485  0.997138]
+GEOM gripper0_right_finger_left_body_visual [0.026495 0.044927 0.954854]
+GEOM gripper0_right_finger_left_carriage_visual [0.028218 0.051777 0.978592]
+GEOM gripper0_right_finger_left_travel_stop_visual [0.026493 0.053315 0.980892]
+GEOM gripper0_right_finger_left_crossed_rack_visual [0.038603 0.022644 0.992093]
+GEOM gripper0_right_finger_left_front_collision [0.026473 0.039503 0.926588]
+GEOM gripper0_right_finger_left_mid_collision [0.026474 0.040203 0.946886]
+GEOM gripper0_right_finger_left_rear_collision [0.026498 0.047227 0.964531]
+GEOM gripper0_right_finger_left_carriage_collision [0.028218 0.051777 0.978592]
+GEOM gripper0_right_finger_left_travel_stop_collision [0.026493 0.053315 0.980892]
+GEOM gripper0_right_finger_right_body_visual [ 0.026535 -0.078005  0.954866]
+GEOM gripper0_right_finger_right_carriage_visual [ 0.024888 -0.084825  0.978541]
+GEOM gripper0_right_finger_right_travel_stop_visual [ 0.026528 -0.086319  0.98088 ]
+GEOM gripper0_right_finger_right_crossed_rack_visual [ 0.014395 -0.055616  0.992103]
+GEOM gripper0_right_finger_right_front_collision [ 0.02646  -0.072471  0.926586]
+GEOM gripper0_right_finger_right_mid_collision [ 0.026498 -0.073245  0.946914]
+GEOM gripper0_right_finger_right_rear_collision [ 0.026591 -0.080359  0.9645  ]
+GEOM gripper0_right_finger_right_carriage_collision [ 0.024888 -0.084825  0.978541]
+GEOM gripper0_right_finger_right_travel_stop_collision [ 0.026528 -0.086319  0.98088 ]
+APPROACH EXECUTION {"max_orientation_error_deg": 0.42494697143114313, "samples": 744, "robot_contacts": []}
+Trajectory saved: project/demo_output/rebot_b601_dm/ready_approach_trajectory.json
+
+PREGRASP-ONLY COMPLETE.
+Inspect GUI and logs before attempting the full grasp.
+PREGRASP robot contacts over entire run: []
+Xlib:  extension "NV-GLX" missing on display ":1".
